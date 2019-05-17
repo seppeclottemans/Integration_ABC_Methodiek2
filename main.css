@@ -34,47 +34,54 @@ body {
 
 
 
-.kennisverwerving, .samenwerking, .discussie {
+.kennisverwerving,
+.samenwerking,
+.discussie {
     padding: 10%;
     display: inline-block;
     width: 10%;
     margin-bottom: 2%;
     margin-right: 2.5%;
     color: white;
-   
+
 }
 
-.productie, .praktijk, .onderzoek {
+.productie,
+.praktijk,
+.onderzoek {
     padding: 10%;
     display: inline-block;
     margin-right: 2.5%;
     width: 10%;
     color: white;
-   
+
 }
 
-.kennisverwerving{
+.kennisverwerving {
     background-color: #F1894D;
     margin-left: 1.25%;
 }
 
-.samenwerking{
+.samenwerking {
     background-color: #27ACAD
 }
 
-.discussie{
+.discussie {
     background-color: #EF8190
 }
 
-.productie{
+.productie {
     background-color: #F3B30A;
     margin-left: 1.25%
 }
 
-.praktijk{
+.praktijk {
     background-color: #6561A9
 }
 
-.onderzoek{
-    background-color:#86A32A
+.onderzoek {
+    background-color: #86A32A
 }
+
+
+
