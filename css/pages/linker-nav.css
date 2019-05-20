@@ -1,11 +1,10 @@
-
-
 .linker-navigatie {
     position: fixed;
     font-size: 14px;
-    font-family: 'Avenir LT Std 55 Roman', sans-serif; /* >>> delete if not already used*/
+    font-family: 'Avenir LT Std 55 Roman', sans-serif;
+    /* >>> delete if not already used*/
     width: 8%;
-    height: 100%;
+    height: 100vh;
     border-right-style: inset;
 }
 
@@ -17,25 +16,34 @@
 }
 
 #lesplan-knop {
-    background-image: url(../nav-images/timeline-black.jpg);
+    background-image: url(/nav-images/timeline-black.jpg);
     padding: 35px 5% 0px 31%;
     text-indent: -20px;
 }
+
 .help {
-    background-image: url(../nav-images/information-black.jpg);
+    background-image: url(/nav-images/information-black.jpg);
     padding: 35px 33% 0px 31%;
 }
+
 #lesplan-knop:hover {
-    background-image: url(../nav-images/timeline.jpg);
+    background-image: url(/nav-images/timeline.jpg);
+    cursor: pointer;
 }
+
 .help:hover {
-    background-image: url(../nav-images/information.jpg);
+    background-image: url(/nav-images/information.jpg);
+    cursor: pointer;
 }
-.help:hover, #lesplan-knop:hover{
+
+.help:hover,
+#lesplan-knop:hover {
     background-color: black;
     color: white;
     filter: invert();
+    cursor: pointer;
 }
+
 .help,
 #lesplan-knop {
     background-repeat: no-repeat;
@@ -58,4 +66,3 @@ a:visited {
     top: 91%;
     width: 65px;
 }
-

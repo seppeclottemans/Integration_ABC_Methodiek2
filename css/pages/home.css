@@ -12,13 +12,28 @@ main {
 }
 
 header {
-    /*display: flex; */
+    padding-top: 5%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: content-box;
+    width: 84.87%;
 
 }
 
-#btn-newStoryboard {
-    float: right;
+.title {
+    margin-right: auto;
 }
+
+hr {
+    margin-top: 1em;
+    width: 100%;
+
+}
+
+
 
 
 
