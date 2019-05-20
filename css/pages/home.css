@@ -1,14 +1,17 @@
 * {
     margin: 0px;
     padding: 0px;
+    max-width: 1024px;
 }
 
 h1 {
     font-family: 'Avenir LT Std 95 Black';
+    font-size: 24pt;
 }
 
 main {
     margin-left: 15.13%;
+
 }
 
 header {
@@ -19,7 +22,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     box-sizing: content-box;
-    width: 84.87%;
+    width: 84.86%;
 
 }
 
@@ -32,9 +35,3 @@ hr {
     width: 100%;
 
 }
-
-
-
-
-
-

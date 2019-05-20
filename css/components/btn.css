@@ -1,5 +1,6 @@
 .btn-zwart {
     font-family: 'Avenir LT Std 55 Roman';
+    letter-spacing: 0.02em;
     color: white;
     height: 27px;
     padding: 0px 1em;
