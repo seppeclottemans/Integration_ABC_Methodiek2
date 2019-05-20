@@ -1,70 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/popup.js"></script>
 </head>
 
 <body>
+
     <nav class="linker-navigatie">
+        <ul>
+            <li>
+                <a href="#" id="lesplan-knop">
+                    <p>Lesplannen</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="help">
+                    <p>Help</p>
+                </a>
+            </li>
+            <img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo">
+        </ul>
+    </nav>
 
-            <ul>
-                <li>
-                    <a href="#" id="lesplan-knop">
-                        <p>Lesplannen</p>
-                    </a>
-                </li>
+    <main>
+        <header>
+            <h1 class="title">Storyboards</h1>
+            <button class="btn-zwart" id="btnNieuw">+Maak nieuw lesplan</button>
 
-                <li>
-                    <a href="#" class="help">
-                        <p>Help</p>
-                    </a>
-
-                </li>
-                <img src="nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo">
-            </ul>
-        </nav>
-
-        <div class="hulp">
-            <h1><b>De abc methode</b></h1>
             <hr>
-            <h2>Wat is de ABC methode</h2>
-            <p>De erkenning van de noodzaak van een radicale heroverweging, in 2013, was het digitale onderwijsteam van University College London (UCL) een pionier in een 'light touch' alternatieve teamgebaseerde aanpak. 'ABC' is het resultaat, een high-energy hands-on workshop. In slechts 90 minuten werken de teachingteams samen om een visueel 'storyboard' te maken. Het storyboard bestaat uit voorgedrukte kaarten die het type en de volgorde van leeractiviteiten (zowel online als offline) vertegenwoordigen om de module te ontmoeten of de leerresultaten te programmeren. Evaluatiemethoden, programmaoverschrijdende thema's en institutioneel beleid zijn allemaal geïntegreerd in het proces.
-
-                De sleutel tot deze aanpak is tempo, betrokkenheid en samenwerking. ABC is vooral nuttig gebleken voor nieuwe programma's of voor programma's die veranderen naar een online of meer gemengd formaat. De aanpak genereert een hoge mate van betrokkenheid, een creatief geïnformeerde dialoog en groepsreflectie over curriculumontwerp bij zelfs tijdarme academici.</p>
-
-            <h2>Tutorial</h2>
-            <div class="iframe-container"><iframe width="714px" height="400px"src="https://www.youtube.com/embed/5ho88VXJTBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-               
-
-            <h2>Kaartjes</h2>
+        </header>
 
 
 
-            <div class="kennisverwerving">
-                <p>kennisverwerving</p>
+        <div id="eersteForm" class="form">
+
+
+            <div class="inhoudForm">
+                <div class="color1 color"></div>
+                <div class="color2 color"></div>
+                <div class="color3 color"></div>
+                <div class="color4 color"></div>
+                <div class="color5 color"></div>
+                <div class="color6 color"></div>
+                <div class="txtForm">
+                    <h1>Basisinfo</h1>
+                    <h3>Opleidingsonderdeel:</h3>
+                    <input type="text">
+                    <h3>Deeltraject:</h3>
+                    <input type="text">
+                    <h3>Docent(en):</h3>
+                    <input type="text">
+                    <h3>Semester:</h3>
+                    <input type="text">
+                    <button class="btn-zwart" id="btnVolgende">volgende</button>
+                </div>
             </div>
-            <div class="samenwerking">
-                <p>Samenwerking</p>
-            </div>
-            <div class="discussie">
-                <p>Discussie</p>
-            </div>
-            <div class="productie">
-                <p>Productie</p>
-            </div>
-            <div class="praktijk">
-                <p>Praktijk</p>
-            </div>
-            <div class="onderzoek">
-                <p>Onderzoek</p>
-            </div>
+        </div>
 
-        
-    </div>
+        <div id="tweedeForm" class="form">
+            <div class="inhoudForm">
+                <div class="color1 color"></div>
+                <div class="color2 color"></div>
+                <div class="color3 color"></div>
+                <div class="color4 color"></div>
+                <div class="color5 color"></div>
+                <div class="color6 color"></div>
+                <div class="txtForm">
+                    <h1>Wat houd het vak in?</h1>
+                    <h3>Samenvatting van het vak:</h3>
+                    <textarea name="subject" placeholder="Schrijf hier..."></textarea>
+                    <h3>Doelstelling(en) van het vak:</h3>
+                    <textarea name="subject" placeholder="Schrijf hier..."></textarea>
+
+
+                    <button class="btn-zwart" id="btnVolgende">volgende</button>
+                    <button class="btn-zwart" id="btnVorige">vorige</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
 </body>
 
 </html>
