@@ -31,7 +31,4 @@ $(function () {
             tweedeForm.style.display = "none";
         }
     }
-
-
-
 });

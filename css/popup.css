@@ -25,9 +25,6 @@
     height: 608px;
 }
 
-
-
-
 #btnNieuw,
 #btnVolgende,
 #btnVorige {
@@ -39,10 +36,19 @@
     border-radius: 15px;
 }
 
+#btnVorige{
+    margin-right: 5%;
+}
+
 #btnVolgende,
 #btnVorige {
     float: right;
-    margin-top: 15%
+    margin-top: 15%;
+    color: white;
+    background-color: black;
+    width: 117px;
+    border-radius: 24px;
+    padding: 5px 0 5px 0;
 }
 
 #btnNieuw {
