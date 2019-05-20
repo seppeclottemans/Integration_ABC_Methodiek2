@@ -1,4 +1,5 @@
 @import url(../avenir-lt-std-cufonfonts-webfont/style.css);
+@import url(linker-nav.css);
 
 body {
     font-family: 'Avenir LT Std 55 Roman';
