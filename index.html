@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="abc.js"></script>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/popup.js"></script>
 </head>
+
 <body>
-    
+
+    <nav class="linker-navigatie">
+        <ul>
+            <li>
+                <a href="#" id="lesplan-knop">
+                    <p>Lesplannen</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="help">
+                    <p>Help</p>
+                </a>
+            </li>
+            <img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo">
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1 class="title">Storyboards</h1>
+            <button class="btn-zwart" id="btnNieuw">+Maak nieuw lesplan</button>
+
+            <hr>
+        </header>
+
+
+
+        <div id="eersteForm" class="form">
+
+
+            <div class="inhoudForm">
+                <div class="color1 color"></div>
+                <div class="color2 color"></div>
+                <div class="color3 color"></div>
+                <div class="color4 color"></div>
+                <div class="color5 color"></div>
+                <div class="color6 color"></div>
+                <div class="txtForm">
+                    <h1>Basisinfo</h1>
+                    <h3>Opleidingsonderdeel:</h3>
+                    <input type="text">
+                    <h3>Deeltraject:</h3>
+                    <input type="text">
+                    <h3>Docent(en):</h3>
+                    <input type="text">
+                    <h3>Semester:</h3>
+                    <input type="text">
+                    <button class="btn-zwart" id="btnVolgende">volgende</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tweedeForm" class="form">
+            <div class="inhoudForm">
+                <div class="color1 color"></div>
+                <div class="color2 color"></div>
+                <div class="color3 color"></div>
+                <div class="color4 color"></div>
+                <div class="color5 color"></div>
+                <div class="color6 color"></div>
+                <div class="txtForm">
+                    <h1>Wat houd het vak in?</h1>
+                    <h3>Samenvatting van het vak:</h3>
+                    <textarea name="subject" placeholder="Schrijf hier..."></textarea>
+                    <h3>Doelstelling(en) van het vak:</h3>
+                    <textarea name="subject" placeholder="Schrijf hier..."></textarea>
+
+
+                    <button class="btn-zwart" id="btnVolgende">volgende</button>
+                    <button class="btn-zwart" id="btnVorige">vorige</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
 </body>
+
 </html>
