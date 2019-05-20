@@ -15,7 +15,7 @@ body {
 header {
     margin-top: 3%;
     width: 63.96%;
-    margin-left: 7.13%;
+    margin-left: 15.13%;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .content {
-    margin-left: 7.13%;
+    margin-left: 15.13%;
     width: 63.96%;
     margin-right: 0;
 }
@@ -104,7 +104,7 @@ button {
     margin-top: 4%;
     width: 162.47px;
     height: 88.78px;
-    margin-left: 7.13%;
+    margin-left: 15.13%;
     border: solid black 1px;
 }
 
