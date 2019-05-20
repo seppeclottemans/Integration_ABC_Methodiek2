@@ -73,31 +73,37 @@ button {
 .oranjeKaart,.blauweKaart,.rozeKaart,.groeneKaart,.paarseKaart,.geleKaart{
     margin-bottom: 12%;
     width: 162.47px;
-    height: 88.78px
+    height: 88.78px;
 }
 
 .oranjeKaart{
-    background-color: #F1894D;   
+    background-color: #F1894D;
+    color: white;
 }
 
 .blauweKaart{
     background-color: #27ACAD;
+    color: white;
 }
 
 .rozeKaart{
     background-color: #EF8190;
+    color: white;
 }
 
 .groeneKaart{
     background-color: #86A32A;
+    color: white;
 }
 
 .paarseKaart{
     background-color: #6561A9;
+    color: white;
 }
 
 .geleKaart{
     background-color: #F3B30A;
+    color: white;
 }
 
 .snapTarget{
