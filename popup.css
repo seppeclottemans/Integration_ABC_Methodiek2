@@ -1,0 +1,109 @@
+.form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#eersteForm .inhoudForm {
+    background-color: white;
+    margin: 5% auto;
+    padding:0;
+    width: 420px;
+    height: 566px;
+}
+
+#tweedeForm .inhoudForm{
+    background-color: white;
+    margin: 5% auto;
+    padding:0;
+    width: 714px;
+    height: 608px;
+}
+
+
+
+
+#btnNieuw,
+#btnVolgende,
+#btnVorige {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#btnVolgende,
+#btnVorige {
+    float: right;
+    margin-top: 15%
+}
+
+#btnNieuw {
+    float: right;
+}
+
+.color{
+    width: 16.6666666666666666%;
+    height: 13px;
+    margin:0;
+    padding: 0;
+    float: left;
+}
+
+.color1 {
+    background-color: #F3B30A;
+}
+.color2 {
+    background-color: #6561A9;
+}
+.color3 {
+    background-color: #86A32A;
+   
+}
+.color4 {
+    background-color: #EF8190;
+}
+.color5 {
+    background-color: #27ACAD;
+}
+.color6 {
+    background-color: #EF8109;
+}
+
+#eersteForm .inhoud{
+    padding: 10% 15%;
+}
+
+#tweedeForm .inhoud{
+    padding: 5% 10% 0%;
+}
+
+.inhoud input{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 23px;
+    
+}
+
+.inhoud textarea{
+    resize: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 116px;
+        
+}
+
+#tweedeForm #btnVolgende,
+#btnVorige {
+    float: right;
+    margin-top: 60px;
+}
