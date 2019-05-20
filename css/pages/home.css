@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Avenir LT Std 95 Black';
+}
+
+main {
+    margin-left: 15.13%;
+}
+
+header {
+    /*display: flex; */
+
+}
+
+#btn-newStoryboard {
+    float: right;
+}
+
+
+
+
