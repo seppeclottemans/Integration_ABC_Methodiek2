@@ -101,6 +101,14 @@
 
 }
 
+.txtForm h3{
+    margin:18px 0;
+}
+
+.txtForm h1{
+    margin:21px 0;
+}
+
 #tweedeForm #btnVolgende,
 #btnVorige {
     float: right;

@@ -39,7 +39,6 @@
 .help:hover,
 #lesplan-knop:hover {
     background-color: black;
-    color: white;
     filter: invert();
     cursor: pointer;
 }
