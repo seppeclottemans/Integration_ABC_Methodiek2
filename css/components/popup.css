@@ -9,6 +9,10 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.txtForm h1 {
+    margin-bottom: 1em;
+}
+
 #eersteForm .inhoudForm {
     background-color: white;
     margin: 5% auto;
@@ -72,15 +76,15 @@
     background-color: #EF8109;
 }
 
-#eersteForm .inhoud{
+#eersteForm .txtForm{
     padding: 10% 15%;
 }
 
-#tweedeForm .inhoud{
+#tweedeForm .txtForm{
     padding: 5% 10% 0%;
 }
 
-.inhoud input{
+.txtForm input{
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -88,7 +92,7 @@
 
 }
 
-.inhoud textarea{
+.txtForm textarea{
     resize: none;
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
