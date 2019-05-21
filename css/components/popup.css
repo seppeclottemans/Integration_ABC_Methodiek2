@@ -9,6 +9,10 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.txtForm h1 {
+    margin-bottom: 1em;
+}
+
 #eersteForm .inhoudForm {
     background-color: white;
     margin: 5% auto;
