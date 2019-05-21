@@ -14,10 +14,17 @@ $(function () {
 
     $("#btnVolgende").on("click", function () {
         var Opleidingsonderdeel = $('#Opleidingsonderdeel').val();
+        localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
+        var Deeltraject = $('#Deeltraject').val();
+        localStorage.setItem("Deeltraject", JSON.stringify(Deeltraject));
+        var Docent = $('#Docent').val();
+        localStorage.setItem("Docent",
+        JSON.stringify(Docent));
+        var Semester = $('#Semester').val();
+        localStorage.setItem("Semester",
+        JSON.stringify(Semester));
         tweedeForm.style.display = "block";
         eersteForm.style.display = "none";
-        localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
-        console.log(Opleidingsonderdeel);
     });
 
     btnVorige.onclick = function () {
