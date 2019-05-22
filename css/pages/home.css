@@ -9,6 +9,11 @@
     width: 20%;
 }
 
+.vak{
+    display: inline-block;
+    width: 30%
+}
+
 .periode{
     display: inline-block;
 
@@ -16,7 +21,7 @@
 }
 .rechts{
     display: inline-block;
-    width: 20%;
+    width: 30%;
    
 }
 
