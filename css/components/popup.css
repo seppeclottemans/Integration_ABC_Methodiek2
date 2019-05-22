@@ -16,25 +16,26 @@
 #eersteForm .inhoudForm {
     background-color: white;
     margin: 5% auto;
-    padding:0;
+    padding: 0;
     width: 420px;
     height: 566px;
 }
 
-#tweedeForm .inhoudForm{
+#tweedeForm .inhoudForm {
     background-color: white;
     margin: 5% auto;
-    padding:0;
+    padding: 0;
     width: 714px;
     height: 608px;
 }
 
-#btnVorige{
+#btnVorige {
     margin-right: 5%;
 }
 
 #btnVolgende,
-#btnVorige {
+#btnVorige,
+#btnFinish {
     float: right;
     margin-top: 15%;
     color: white;
@@ -48,10 +49,10 @@
     float: right;
 }
 
-.color{
+.color {
     width: 16.6666666666666666%;
     height: 13px;
-    margin:0;
+    margin: 0;
     padding: 0;
     float: left;
 }
@@ -59,32 +60,37 @@
 .color1 {
     background-color: #F3B30A;
 }
+
 .color2 {
     background-color: #6561A9;
 }
+
 .color3 {
     background-color: #86A32A;
 
 }
+
 .color4 {
     background-color: #EF8190;
 }
+
 .color5 {
     background-color: #27ACAD;
 }
+
 .color6 {
     background-color: #EF8109;
 }
 
-#eersteForm .txtForm{
+#eersteForm .txtForm {
     padding: 10% 15%;
 }
 
-#tweedeForm .txtForm{
+#tweedeForm .txtForm {
     padding: 5% 10% 0%;
 }
 
-.txtForm input{
+.txtForm input {
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -92,7 +98,7 @@
 
 }
 
-.txtForm textarea{
+.txtForm textarea {
     resize: none;
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
@@ -101,16 +107,16 @@
 
 }
 
-.txtForm h3{
-    margin:18px 0;
+.txtForm h3 {
+    margin: 18px 0;
 }
 
-.txtForm h1{
-    margin:21px 0;
+.txtForm h1 {
+    margin: 21px 0;
 }
 
 #tweedeForm #btnVolgende,
-#btnVorige {
+#btnVorige #btnFinish {
     float: right;
     margin-top: 60px;
 }

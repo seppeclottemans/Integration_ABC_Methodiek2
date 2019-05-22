@@ -7,6 +7,7 @@ $(function () {
     var tweedeForm = document.getElementById("tweedeForm");
     var btnVolgende = document.getElementById("btnVolgende");
     var btnVorige = document.getElementById("btnVorige");
+    var btnFinish = document.getElementById("btnFinish");
 
     btnNieuw.onclick = function () {
         eersteForm.style.display = "block";
@@ -22,6 +23,11 @@ $(function () {
 
     btnVorige.onclick = function () {
         eersteForm.style.display = "block";
+        tweedeForm.style.display = "none";
+    }
+    
+    btnFinish.onclick = function () {
+        eersteForm.style.display = "none";
         tweedeForm.style.display = "none";
     }
 
