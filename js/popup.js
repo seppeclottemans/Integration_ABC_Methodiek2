@@ -1,6 +1,10 @@
-$(function () {
+$('document').ready(function () {
     console.log('Script loaded');
-
+    var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
+    Opleidingsonderdeel = JSON.parse(Opleidingsonderdeel);
+    var ingevuldOpleidingsonderdeel = $('<h2>').text(Opleidingsonderdeel);
+    ingevuldOpleidingsonderdeel.attr('id', "ingevuldOpleidingsonderdeel");
+    $('#lesplan1').prepend(ingevuldOpleidingsonderdeel);
 
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
@@ -14,22 +18,6 @@ $(function () {
     }
 
     $("#btnVolgende").on("click", function () {
-        var Opleidingsonderdeel = $('#Opleidingsonderdeel').val();
-        localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
-        var Deeltraject = $('#Deeltraject').val();
-        localStorage.setItem("Deeltraject", JSON.stringify(Deeltraject));
-        var Docent = $('#Docent').val();
-        localStorage.setItem("Docent",
-        JSON.stringify(Docent));
-        var Semester = $('#Semester').val();
-        localStorage.setItem("Semester",
-        JSON.stringify(Semester));
-        
-        localStorage.getItem('Opleidingsonderdeel');
-        var ingevuldOpleidingsonderdeel = $('<p>').text(Opleidingsonderdeel);
-        ingevuldOpleidingsonderdeel.attr('id', "ingevuldOpleidingsonderdeel");
-        $('#lesplan1').append(ingevuldOpleidingsonderdeel);
-        
         tweedeForm.style.display = "block";
         eersteForm.style.display = "none";
     });
@@ -38,7 +26,7 @@ $(function () {
         eersteForm.style.display = "block";
         tweedeForm.style.display = "none";
     }
-    
+
     btnFinish.onclick = function () {
         eersteForm.style.display = "none";
         tweedeForm.style.display = "none";
@@ -53,5 +41,18 @@ $(function () {
             tweedeForm.style.display = "none";
         }
     }
+    
+    $("#btnFinish").on("click", function saveToLocalStorage() {
+        var Opleidingsonderdeel = $('#Opleidingsonderdeel').val();
+        localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
+        var Deeltraject = $('#Deeltraject').val();
+        localStorage.setItem("Deeltraject", JSON.stringify(Deeltraject));
+        var Docent = $('#Docent').val();
+        localStorage.setItem("Docent",
+            JSON.stringify(Docent));
+        var Semester = $('#Semester').val();
+        localStorage.setItem("Semester",
+            JSON.stringify(Semester));
+    });
 
 });
