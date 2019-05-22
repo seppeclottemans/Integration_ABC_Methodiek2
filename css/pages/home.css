@@ -4,25 +4,39 @@
     max-width: 1024px;
 }
 
-.onderwerpen{
+#ingevuldOpleidingsonderdeel{
+    font-family: 'Avenir LT Std 95 Black';
+    font-size: 24pt;
     display: inline-block;
-    width: 20%;
+    width: 50%;
+    margin-right: 9.7%;
 }
 
-.vak{
+#ingevuldDeeltraject{
     display: inline-block;
-    width: 30%
+    font-family: 'Avenir LT Std 95 Black';
+    font-size: 14pt;
+    
+}
+
+#ingevuldDocent{
+    display: inline-block;
+}
+
+#ingevuldSemester{
+    display: inline-block;    
+}
+
+.onderwerpen{
+    font-family: 'Avenir LT Std 95 Black';
+    display: inline-block;
+    width: 20%;
+    margin-right: 9.7%;
 }
 
 .periode{
     display: inline-block;
-
-   
-}
-.rechts{
-    display: inline-block;
-    width: 30%;
-   
+    width: 20%;
 }
 
 h1 {
@@ -46,7 +60,7 @@ h1 {
 
 
 .beschrijving{
-    width: 51%;
+    width: 50%;
 }
 
 main {
