@@ -23,6 +23,12 @@ $(function () {
         var Semester = $('#Semester').val();
         localStorage.setItem("Semester",
         JSON.stringify(Semester));
+        
+        localStorage.getItem('Opleidingsonderdeel');
+        var ingevuldOpleidingsonderdeel = $('<p>').text(Opleidingsonderdeel);
+        ingevuldOpleidingsonderdeel.attr('id', "ingevuldOpleidingsonderdeel");
+        $('#lesplan1').append(ingevuldOpleidingsonderdeel);
+        
         tweedeForm.style.display = "block";
         eersteForm.style.display = "none";
     });
