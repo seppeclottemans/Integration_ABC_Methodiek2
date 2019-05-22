@@ -14,20 +14,30 @@ $('document').ready(function () {
     $('#lesplan1').append(ingevuldDeeltraject);
     $("#lesplan1").append("<br>");
 
-    $("#lesplan1").append("<p class='onderwerpen'>docent</p>");
     var Docent = localStorage.getItem('Docent');
     Docent = JSON.parse(Docent);
     var ingevuldDocent = $('<p>').text(Docent);
     ingevuldDocent.attr('id', "ingevuldDocent");
+    if (Docent != null) {
+        $("#lesplan1").append("<p class='onderwerpen'>docent(en):</p>");
+    }
     $("#lesplan1").append(ingevuldDocent);
     $("#lesplan1").append("<br>");
 
-    $("#lesplan1").append("<p class='onderwerpen'>Deeltraject</p>");
     var Semester = localStorage.getItem('Semester');
     Semester = JSON.parse(Semester);
+    if (Semester != null) {
+        $("#lesplan1").append("<p class='onderwerpen'>Deeltraject:</p>");
+    }
     var ingevuldSemester = $('<p>').text(Semester);
     ingevuldSemester.attr('id', "ingevuldSemester");
     $("#lesplan1").append(ingevuldSemester);
+    
+    var doelstellingen = localStorage.getItem('doelstellingen');
+    doelstellingen = JSON.parse(doelstellingen);
+    var ingevulddoelstellingen = $('<p>').text(doelstellingen);
+    ingevulddoelstellingen.attr('id', "ingevulddoelstellingen");
+    $("#lesplan1").append(ingevulddoelstellingen);
 
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
@@ -76,6 +86,15 @@ $('document').ready(function () {
         var Semester = $('#Semester').val();
         localStorage.setItem("Semester",
             JSON.stringify(Semester));
+        var vakbeschrijving = $('#vakbeschrijving').val();
+        localStorage.setItem("vakbeschrijving",
+            JSON.stringify(vakbeschrijving));
+        var doelstellingen = $('#doelstellingen').val();
+        localStorage.setItem("doelstellingen",
+            JSON.stringify(doelstellingen));
+        var doelstellingen = $('#doelstellingen').val();
+        localStorage.setItem("doelstellingen",
+            JSON.stringify(doelstellingen));
     });
 
 });

@@ -1,3 +1,7 @@
+textarea{
+    padding: 3%;
+}
+
 .form {
     display: none;
     position: fixed;
@@ -37,12 +41,16 @@
 #btnVorige,
 #btnFinish {
     float: right;
-    margin-top: 15%;
+    margin-top: 3%;
     color: white;
     background-color: black;
     width: 117px;
     border-radius: 24px;
     padding: 5px 0 5px 0;
+}
+
+#btnVolgende{
+    margin-top: 15%;
 }
 
 #btnNieuw {

@@ -27,6 +27,10 @@
     display: inline-block;    
 }
 
+#ingevulddoelstellingen{
+    margin-top: 3%;
+}
+
 .onderwerpen{
     font-family: 'Avenir LT Std 95 Black';
     display: inline-block;
