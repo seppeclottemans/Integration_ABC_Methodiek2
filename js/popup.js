@@ -1,10 +1,33 @@
 $('document').ready(function () {
     console.log('Script loaded');
+
     var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
     Opleidingsonderdeel = JSON.parse(Opleidingsonderdeel);
     var ingevuldOpleidingsonderdeel = $('<h2>').text(Opleidingsonderdeel);
     ingevuldOpleidingsonderdeel.attr('id', "ingevuldOpleidingsonderdeel");
-    $('#lesplan1').prepend(ingevuldOpleidingsonderdeel);
+    $('#lesplan1').append(ingevuldOpleidingsonderdeel);
+
+    var Deeltraject = localStorage.getItem('Deeltraject');
+    Deeltraject = JSON.parse(Deeltraject);
+    var ingevuldDeeltraject = $('<p>').text(Deeltraject);
+    ingevuldDeeltraject.attr('id', "ingevuldDeeltraject");
+    $('#lesplan1').append(ingevuldDeeltraject);
+    $("#lesplan1").append("<br>");
+
+    $("#lesplan1").append("<p class='onderwerpen'>docent</p>");
+    var Docent = localStorage.getItem('Docent');
+    Docent = JSON.parse(Docent);
+    var ingevuldDocent = $('<p>').text(Docent);
+    ingevuldDocent.attr('id', "ingevuldDocent");
+    $("#lesplan1").append(ingevuldDocent);
+    $("#lesplan1").append("<br>");
+
+    $("#lesplan1").append("<p class='onderwerpen'>Deeltraject</p>");
+    var Semester = localStorage.getItem('Semester');
+    Semester = JSON.parse(Semester);
+    var ingevuldSemester = $('<p>').text(Semester);
+    ingevuldSemester.attr('id', "ingevuldSemester");
+    $("#lesplan1").append(ingevuldSemester);
 
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
@@ -41,7 +64,7 @@ $('document').ready(function () {
             tweedeForm.style.display = "none";
         }
     }
-    
+
     $("#btnFinish").on("click", function saveToLocalStorage() {
         var Opleidingsonderdeel = $('#Opleidingsonderdeel').val();
         localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
