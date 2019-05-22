@@ -4,6 +4,22 @@
     max-width: 1024px;
 }
 
+.onderwerpen{
+    display: inline-block;
+    width: 20%;
+}
+
+.periode{
+    display: inline-block;
+
+   
+}
+.rechts{
+    display: inline-block;
+    width: 20%;
+   
+}
+
 h1 {
     font-family: 'Avenir LT Std 95 Black';
     font-size: 24pt;
@@ -18,8 +34,14 @@ h1 {
 
 }
 
+.lesplan1{
+    width: 84.86%;
+
+}
+
+
 .beschrijving{
-    width: 41.25%;
+    width: 51%;
 }
 
 main {
