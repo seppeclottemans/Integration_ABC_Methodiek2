@@ -1,8 +1,7 @@
-body {
+html {
     font-family: 'Avenir LT Std 55 Roman';
+    margin: 0;
 }
-
-
 
 .clearfix::after {
     clear: both;
@@ -14,17 +13,14 @@ body {
     width: 63.96%;
 }
 
-
 h1 {
     font-family: 'Avenir LT Std 95 Black';
     font-size: 24pt;
 }
 
 .content {
-    margin-top: 1rem;
     width: 63.96%;
     box-sizing: content-box;
-
 }
 
 .doelstellingen,
@@ -60,12 +56,12 @@ h3 {
     top: 0;
     right: 0;
     width: 20.7%;
-    margin-top: 3%;
+    margin-top: 3.5%;
 }
 
 .kaartjes p {
     color: white;
-    padding-top: 25%;
+    padding-top: 20%;
     text-align: center;
 }
 
@@ -119,4 +115,32 @@ h3 {
 
 li {
     list-style-type: none;
+}
+
+@media only screen and (min-width: 1440px){
+    .oranjeKaart,
+.blauweKaart,
+.rozeKaart,
+.groeneKaart,
+.paarseKaart,
+.geleKaart {
+    
+    width: 70%;
+    height: 100px;
+    margin-bottom: 5%
+    
+    }
+    .kaartjes p {
+        padding-top: 20%
+    }
+    .kaartjes{
+        margin-top: 9%
+    }
+    .snapTarget {
+        width: 20%;
+    height: 100px;
+    }
+    .snapTarget p{
+        padding-top: 17%
+    }
 }

@@ -17,13 +17,13 @@
 
 #lesplan-knop {
     background-image: url(../../nav-images/timeline-black.jpg);
-    padding: 45px 6px 10px 5px;
+    padding: 60% 2% 10% 10%;
 
 }
 
 .help {
     background-image: url(../../nav-images/information-black.jpg);
-    padding: 45px 26px 10px 28px;
+    padding: 65% 30% 10% 30%;
 }
 
 #lesplan-knop:hover {
@@ -60,13 +60,21 @@ a:visited {
 
 .ehb-logo {
     position: absolute;
-    left: 10%;
+    left: 8px;
     top: 91%;
-    width: 80%;
+    width: 65px;
 }
 
-@media only screen and (max-width: 1440px) {
-    .linker-navigatie{
-        float: left;
-    }   
+
+@media only screen and (min-width: 1440px) {
+    #lesplan-knop{
+        margin-left: 20%
+    }
+    .help{
+        margin-left: 20%
+    }
+    .ehb-logo{
+        margin-left: 15px;
+    }
 }
+*/
