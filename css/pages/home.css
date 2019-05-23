@@ -4,6 +4,15 @@
     
 }
 
+#Opleidingsonderdeel,
+#Semester,
+#Docent,
+#Deeltraject,
+#weekBereik,
+#doelstellingenWeek {
+    padding-left: 5%;
+}
+
 #ingevuldOpleidingsonderdeel {
     font-family: 'Avenir LT Std 95 Black';
     font-size: 24pt;
@@ -59,7 +68,6 @@ h1 {
 
 .lesplan1 {
     width: 84.86%;
-
 }
 
 
@@ -97,6 +105,18 @@ hr {
 
 }
 
+#ingevulddoelstellingenWeek,
+#ingevuldweekBereik {
+    font-family: 'Avenir LT Std 95 Black';
+    height: 25vh;
+    margin-bottom: 10%;
+}
+
+#doelstellingenWeek{
+    height: 25vh;
+    margin-bottom: 10%;
+}
+}
 
 /*
 @media only screen and (min-width: 1024px) {

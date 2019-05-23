@@ -32,7 +32,7 @@ $('document').ready(function () {
     var ingevuldSemester = $('<p>').text(Semester);
     ingevuldSemester.attr('id', "ingevuldSemester");
     $("#lesplan1").append(ingevuldSemester);
-    
+
     var doelstellingen = localStorage.getItem('doelstellingen');
     doelstellingen = JSON.parse(doelstellingen);
     var ingevulddoelstellingen = $('<p>').text(doelstellingen);
