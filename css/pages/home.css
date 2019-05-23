@@ -4,11 +4,16 @@
     max-width: 1024px;
 }
 
-#Opleidingsonderdeel, #Semester, #Docent, #Deeltraject{
+#Opleidingsonderdeel,
+#Semester,
+#Docent,
+#Deeltraject,
+#weekBereik,
+#doelstellingenWeek {
     padding-left: 5%;
 }
 
-#ingevuldOpleidingsonderdeel{
+#ingevuldOpleidingsonderdeel {
     font-family: 'Avenir LT Std 95 Black';
     font-size: 24pt;
     display: inline-block;
@@ -16,33 +21,33 @@
     margin-right: 9.7%;
 }
 
-#ingevuldDeeltraject{
+#ingevuldDeeltraject {
     display: inline-block;
     font-family: 'Avenir LT Std 95 Black';
     font-size: 14pt;
-    
+
 }
 
-#ingevuldDocent{
+#ingevuldDocent {
     display: inline-block;
 }
 
-#ingevuldSemester{
-    display: inline-block;    
+#ingevuldSemester {
+    display: inline-block;
 }
 
-#ingevulddoelstellingen{
+#ingevulddoelstellingen {
     margin-top: 3%;
 }
 
-.onderwerpen{
+.onderwerpen {
     font-family: 'Avenir LT Std 95 Black';
     display: inline-block;
     width: 20%;
     margin-right: 9.7%;
 }
 
-.periode{
+.periode {
     display: inline-block;
     width: 20%;
 }
@@ -52,22 +57,21 @@ h1 {
     font-size: 24pt;
 }
 
-.lesplan1 h2{
+.lesplan1 h2 {
     margin-bottom: 5%
 }
 
-.lesplan1 p{
+.lesplan1 p {
     margin-bottom: 2%;
 
 }
 
-.lesplan1{
+.lesplan1 {
     width: 84.86%;
-
 }
 
 
-.beschrijving{
+.beschrijving {
     width: 50%;
 }
 
@@ -86,7 +90,7 @@ header {
     box-sizing: content-box;
     width: 84.86%;
     float: left;
-  
+
 
 }
 
@@ -101,3 +105,14 @@ hr {
 
 }
 
+#ingevulddoelstellingenWeek,
+#ingevuldweekBereik {
+    font-family: 'Avenir LT Std 95 Black';
+    height: 25vh;
+    margin-bottom: 10%;
+}
+
+#doelstellingenWeek{
+    height: 25vh;
+    margin-bottom: 10%;
+}
