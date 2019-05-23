@@ -1,7 +1,6 @@
-/*
 body {
     font-family: 'Avenir LT Std 55 Roman';
-   
+    max-width: 1024px;
 }
 
 .clearfix::after {
@@ -11,9 +10,16 @@ body {
 }
 
 header {
-    margin-top: 3%;
+    padding-top: 10%;
     width: 63.96%;
-    margin-left: 15.13%;
+    margin-left: 0%;
+    float: left;
+}
+
+#fase-view {
+    display: inline-block;
+    display: inline-block;
+    float: left;
 }
 
 h1 {
@@ -22,9 +28,10 @@ h1 {
 }
 
 .content {
-    margin-left: 15.13%;
+    margin-left: 0%;
     width: 63.96%;
     margin-right: 0;
+    float: left;
 }
 
 .doelstellingen,
@@ -40,73 +47,89 @@ h1 {
     display: inline-block;
 }
 
-.klaarButton{
+.klaarButton {
     position: absolute;
     left: 57.91%;
     top: 87.24%;
 }
 
-.kaartjes{
+.kaartjes {
     position: absolute;
     top: 0;
     right: 0;
     width: 20.7%;
-    margin-top: 3%;
+    padding-top: 3%;
 }
 
-.kaartjes p{
+.kaartjes p {
     color: white;
     padding-top: 25%;
     text-align: center;
 }
 
-.oranjeKaart,.blauweKaart,.rozeKaart,.groeneKaart,.paarseKaart,.geleKaart{
+.oranjeKaart,
+.blauweKaart,
+.rozeKaart,
+.groeneKaart,
+.paarseKaart,
+.geleKaart {
+/*    text-align: center;*/
     margin-bottom: 12%;
     width: 162.47px;
     height: 88.78px;
 }
+.oranjeKaart p,
+.blauweKaart p,
+.rozeKaart p,
+.groeneKaart p,
+.paarseKaart p,
+.geleKaart p {
+    text-align: center;
+        padding-top:10px;
 
-.oranjeKaart{
+}
+
+.oranjeKaart {
     background-color: #F1894D;
     color: white;
 }
 
-.blauweKaart{
+.blauweKaart {
     background-color: #27ACAD;
     color: white;
 }
 
-.rozeKaart{
+.rozeKaart {
     background-color: #EF8190;
     color: white;
 }
 
-.groeneKaart{
+.groeneKaart {
     background-color: #86A32A;
     color: white;
 }
 
-.paarseKaart{
+.paarseKaart {
     background-color: #6561A9;
     color: white;
 }
 
-.geleKaart{
+.geleKaart {
     background-color: #F3B30A;
     color: white;
 }
 
-.snapTarget{
-    margin-top: 4%;
+.snapTarget {
+    margin-top: 0px;
     width: 162.47px;
     height: 88.78px;
-    margin-left: 15.13%;
+    margin-left: 0px;
     border: solid black 1px;
     display: inline-block;
     float: left;
 }
 
-.snapTarget p{
+.snapTarget p {
     margin: 0;
     padding-top: 25%;
     text-align: center;
@@ -122,4 +145,59 @@ li {
     left: 19%;
     z-index: -1;
 }
-*/
+
+/******************grid probeersel********/
+
+
+#fase-column {
+    height: 300px;
+    width: 162.47px;
+    margin: 0px 10px 0px 0px;
+    display: grid;
+    grid-template-columns: 162.47px;
+    grid-template-rows: 88.77px 88.77px 88.77px 88.77px;
+    overflow-y: scroll;
+    grid-auto-flow: column;
+}
+
+.container {
+    width: 650px;
+    display: flex;
+    float: left;
+    overflow-x: scroll;
+    border: 1px black;
+        /*    justify-content:space-between;*/
+}
+
+.kaartjes-placeholder {
+    border: 1px dotted black;
+    height: 88.77px;
+}
+
+.kaartje-start {
+    width: 200px;
+    float: right;
+}
+
+.start-position-kaartjes {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kaartje-start .portlet-header .ui-icon{
+    display: none;
+}
+
+.container .portlet-header .ui-icon{
+    display: block;
+    text-indent: -9999em;
+    padding: 3px 0px 0px 3px;
+    overflow: hidden;
+    width: 17px;
+    height: 17px;
+}
+

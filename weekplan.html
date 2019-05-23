@@ -3,24 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekplan</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/dragEnDrop.js"></script>
+
+    <script src="js/dragAndDrop.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+
 </head>
 
 <body>
     <nav class="linker-navigatie">
         <ul>
             <li>
-                <a href="index.html" id="lesplan-knop">
+                <a href="#" id="lesplan-knop">
                     <p>Lesplannen</p>
                 </a>
             </li>
             <li>
-                <a href="hulp.html" class="help">
+                <a href="#" class="help">
                     <p>Help</p>
                 </a>
             </li>
@@ -45,9 +47,11 @@
                 <button class="btn-zwart">Bewerk info</button>
                 <button class="klaarButton btn-zwart">klaar</button>
             </div>
+            <br> sleep hier
 
         </div>
 
+        <!--
         <ul id="kaartjes" class="kaartjes">
             <li id="kaart1" class="oranjeKaart">
                 <p>Kennisverwerving</p>
@@ -68,17 +72,70 @@
                 <p>Productie</p>
             </li>
         </ul>
+        
+-->
+        <div class="container">
+            <div class="column" id="fase-column">
 
-        <div id='snapTarget' class="snapTarget">
-            <p>sleep hier</p>
+            </div>
+
+            <div class="column" id="fase-column">
+
+            </div>
+
+            <div class="column" id="fase-column">
+
+            </div>
+            <div class="column" id="fase-column">
+
+            </div>
         </div>
-
-        <div id='snapTarget' class="snapTarget">
-            <p>sleep hier</p>
-        </div>
-
 
     </main>
+    <div class="start-position-kaartjes">
+        <div class="column kaartje-start" id="">
+            <div id="" class="oranjeKaart portlet">
+                <div class="portlet-header">
+                    <p>kennisverwerving</p>
+                </div>
+                <div class="portlet-content"></div>
+            </div>
+            <div id="" class="blauweKaart portlet">
+                <div class="portlet-header">
+                    <p>samenwerking</p>
+                </div>
+                <div class="portlet-content"></div>
+            </div>
+
+            <div id="" class="rozeKaart portlet">
+                <div class="portlet-header">
+                    <p>discussie</p>
+                </div>
+                <div class="portlet-content"></div>
+            </div>
+
+            <div id="" class="groeneKaart portlet">
+                <div class="portlet-header">
+                    <p>onderzoek</p>
+                </div>
+                <div class="portlet-content"></div>
+            </div>
+
+            <div id="" class="paarseKaart portlet">
+                <div class="portlet-header">
+                    <p>praktijk</p>
+                </div>
+                <div class="portlet-content"></div>
+            </div>
+
+            <div id="" class="geleKaart portlet">
+                <div class="portlet-header">
+                    <p>productie</p>
+                </div>
+                <div class="portlet-content"></div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
