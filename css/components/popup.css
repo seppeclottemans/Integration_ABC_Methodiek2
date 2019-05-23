@@ -120,3 +120,47 @@
     float: right;
     margin-top: 60px;
 }
+
+#rightDiv{
+    float: right;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid white;
+    width: 310px;
+    height: 301px;
+    margin-right: 45px;
+}
+
+#leftDiv{
+    display: inline-block;
+    border: 1px solid white;
+    width: 310px;
+    height: 301px;
+    margin-left: 44px;
+}
+
+#popupContent h1 {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#popupContent h3{
+    width: 100%;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+#popupContent label {
+    margin-left: 10px;
+}
+
+#popupContent {
+    color: white;
+    margin:15% auto;
+    padding:0;
+    width: 714px;
+    height: 432px;
+}

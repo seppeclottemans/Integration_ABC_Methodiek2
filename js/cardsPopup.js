@@ -72,8 +72,7 @@ function printCard(data) {
         var tekstCheck = $('<label>').text(data.contact[b]);
 
         var br = $('<br>');
-
-        $('#leftDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#leftDiv').append(tekstCheck);
         $('#leftDiv').append(br);
     }
@@ -90,7 +89,7 @@ function printCard(data) {
 
         var br = $('<br>');
 
-        $('#rightDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#rightDiv').append(tekstCheck);
         $('#rightDiv').append(br);
     }
