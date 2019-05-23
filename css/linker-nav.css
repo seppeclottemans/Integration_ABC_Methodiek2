@@ -16,23 +16,23 @@
 }
 
 #lesplan-knop {
-    background-image: url(../../nav-images/timeline-black.jpg);
+    background-image: url(../nav-images/timeline-black.jpg);
     padding: 45px 6px 10px 5px;
 
 }
 
 .help {
-    background-image: url(../../nav-images/information-black.jpg);
+    background-image: url(../nav-images/information-black.jpg);
     padding: 45px 26px 10px 28px;
 }
 
 #lesplan-knop:hover {
-    background-image: url(../../nav-images/timeline.jpg);
+    background-image: url(../nav-images/timeline.jpg);
     cursor: pointer;
 }
 
 .help:hover {
-    background-image: url(../../nav-images/information.jpg);
+    background-image: url(../nav-images/information.jpg);
     cursor: pointer;
 }
 
