@@ -60,11 +60,6 @@ $('document').ready(function () {
         tweedeForm.style.display = "none";
     }
 
-    btnFinish.onclick = function () {
-        eersteForm.style.display = "none";
-        tweedeForm.style.display = "none";
-    }
-
 
     window.onclick = function (event) {
         if (event.target == eersteForm) {
