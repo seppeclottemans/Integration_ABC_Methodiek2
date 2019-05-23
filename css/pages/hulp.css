@@ -3,9 +3,8 @@
     text-align: center;
 }
 
-.info h2{
-    margin-bottom: %;
-    margin-top: 
+.marge h2{
+   
 }
 
 
@@ -13,10 +12,12 @@
 .kennisverwerving,
 .samenwerking,
 .discussie {
-   width: 5%;
-    padding: 97px;
+   width: 11%;
+    padding: 10%;
     color: white;
     float: left;
+    margin: 1%;
+    text-align: center
    
     
 
@@ -25,10 +26,11 @@
 .productie,
 .praktijk,
 .onderzoek {
-width: 5%;
-    padding: 97px;
+width: 11%;
+    padding: 10%;
     color: white;
     float: left;
+    margin: 1%
    
 
  
@@ -63,3 +65,12 @@ width: 5%;
     background-color: #86A32A
 }
 
+.kennisverwerving p{
+    
+}
+
+/*
+@media only screen and (max-width: 1440px) {
+    .info{
+        width: 100%
+    }*/
