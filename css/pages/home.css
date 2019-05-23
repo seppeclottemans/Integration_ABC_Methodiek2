@@ -4,6 +4,10 @@
     max-width: 1024px;
 }
 
+#Opleidingsonderdeel, #Semester, #Docent, #Deeltraject{
+    padding-left: 5%;
+}
+
 #ingevuldOpleidingsonderdeel{
     font-family: 'Avenir LT Std 95 Black';
     font-size: 24pt;
