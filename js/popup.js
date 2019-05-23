@@ -45,6 +45,7 @@ $('document').ready(function () {
     var btnVolgende = document.getElementById("btnVolgende");
     var btnVorige = document.getElementById("btnVorige");
     var btnFinish = document.getElementById("btnFinish");
+    var popupCard = document.getElementById("popupCard");
 
     btnNieuw.onclick = function () {
         eersteForm.style.display = "block";
@@ -73,6 +74,12 @@ $('document').ready(function () {
         if (event.target == tweedeForm) {
             tweedeForm.style.display = "none";
         }
+        
+
+    if (event.target == popupCard) {
+        popupCard.style.display = "none";
+    }
+
     }
 
     $("#btnFinish").on("click", function saveToLocalStorage() {
