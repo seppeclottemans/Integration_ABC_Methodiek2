@@ -43,7 +43,7 @@ $(function () {
             .addClass("ui-widget ui-widget-content ui-helper-clearfix ui-corner-all")
             .find(".portlet-header")
             .addClass("ui-widget-header ui-corner-all")
-            .prepend("<img src='nav-images/cancel-cross.svg' alt='cancel cross' class='ui-icon portlet-toggle'></img>")
+            .prepend("<img src='../nav-images/cancel-cross.svg' alt='cancel cross' class='ui-icon portlet-toggle'></img>")
 
 
         $(".ui-icon").on("click", function () {
