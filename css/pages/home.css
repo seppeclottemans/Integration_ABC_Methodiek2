@@ -85,6 +85,8 @@ header {
     align-items: center;
     box-sizing: content-box;
     width: 84.86%;
+    float: left;
+  
 
 }
 
