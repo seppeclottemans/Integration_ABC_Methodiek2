@@ -1,5 +1,4 @@
 $(function () {
-    console.log('script loaded');
 
     $(function () {
 
@@ -22,7 +21,7 @@ $(function () {
         function nieuweDiv(event, itemClass) {
             var aantalStartKaartjes = $(".kaartje-start .portlet").length;
 
-            console.log(aantalStartKaartjes);
+            
             if (aantalStartKaartjes < 6) {
 
                 var cloneItem = $(itemClass).clone();
@@ -56,7 +55,5 @@ $(function () {
 
         });
     });
-
-
 
 });
