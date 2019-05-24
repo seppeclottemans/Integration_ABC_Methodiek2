@@ -37,7 +37,6 @@ $(function () {
 
                     var deHeader = $(this).parent();
                     var deDiv = deHeader.parent();
-                    console.log('ye');
 
                     $(deDiv).remove();
 
@@ -68,7 +67,7 @@ $(function () {
             $(".fase").each(function (faseColumn) {
                 var columnId = this.id;
                 var order = $(this).sortable('toArray');
-                var positions = order.join(';');
+                var positions = order.join(' ');
                 var weergave = {
                     id: columnId,
                     positions: positions
