@@ -29,7 +29,7 @@ $("#productie").on("click", function () {
         $('#popupCard').empty();
         var productie = data.productie;
         printCard(productie);
-        
+
     }).fail(function (err1, err2) {
         console.log('Fail');
         console.log(err1);
@@ -48,7 +48,7 @@ $("#samenwerking").on("click", function () {
         $('#popupCard').empty();
         var samenwerking = data.samenwerking;
         printCard(samenwerking);
-        
+
     }).fail(function (err1, err2) {
         console.log('Fail');
         console.log(err1);
@@ -67,7 +67,7 @@ $("#discussie").on("click", function () {
         $('#popupCard').empty();
         var discussie = data.discussie;
         printCard(discussie);
-        
+
     }).fail(function (err1, err2) {
         console.log('Fail');
         console.log(err1);
@@ -86,7 +86,7 @@ $("#onderzoek").on("click", function () {
         $('#popupCard').empty();
         var onderzoek = data.onderzoek;
         printCard(onderzoek);
-        
+
     }).fail(function (err1, err2) {
         console.log('Fail');
         console.log(err1);
@@ -105,7 +105,7 @@ $("#praktijk").on("click", function () {
         $('#popupCard').empty();
         var praktijk = data.praktijk;
         printCard(praktijk);
-        
+
     }).fail(function (err1, err2) {
         console.log('Fail');
         console.log(err1);
@@ -115,13 +115,13 @@ $("#praktijk").on("click", function () {
 
 
 window.onclick = function (event) {
-        
+
 
     if (event.target == popupCard) {
         popupCard.style.display = "none";
     }
 
-    }
+}
 
 
 function printCard(data) {
@@ -146,7 +146,10 @@ function printCard(data) {
 
     for (var b in data.contact) {
         var checkbox = $('<input type="checkbox">');
-        checkbox.attr('id', "check" + data.contact[b]);
+        var idCheckboxString = data.contact[b];
+        $('idCheckboxString').text();
+        idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
+        checkbox.attr('id', "check" + idCheckboxString);
 
         var tekstCheck = $('<label>').text(data.contact[b]);
 
@@ -162,16 +165,29 @@ function printCard(data) {
     for (var b in data.digitaal) {
 
         var checkbox = $('<input type="checkbox">');
-        checkbox.attr('id', "check" + data.digitaal[b]);
+        var idCheckboxString = data.digitaal[b];
+        $('idCheckboxString').text();
+        idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
+        checkbox.attr('id', "check" + idCheckboxString);
 
         var tekstCheck = $('<label>').text(data.digitaal[b]);
 
         var br = $('<br>');
-
-        $(tekstCheck).prepend(checkbox);
+        $('#rightDiv').append(checkbox);
         $('#rightDiv').append(tekstCheck);
         $('#rightDiv').append(br);
     }
+    readChecked = function () {
+        var numberOfChecked = $("input:checked").length;
+        var checked = $(this).attr('id');
+        if ($('#' + checked).is(":checked")) {
+            localStorage.setItem("checked" + this.id, JSON.stringify(checked));
+        } else {
+            localStorage.removeItem("checked" + this.id);
+        }
+
+    };
+    $("input[type=checkbox]").on("click", readChecked);
 
     /*  var Description = $('<p>').text(data.description);
       $('#popupCard').append(Description);*/
