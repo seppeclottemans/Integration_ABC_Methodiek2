@@ -1,28 +1,13 @@
-$("#buttonOne").on("click", function () {
+console.log("script linked");
+
+
+$("#kennisverwerving").on("click", function () {
     $.ajax({
-        url: "Data.json",
+        url: "data/Data.json",
         method: 'GET',
         dataType: "json"
     }).done(function (data) {
-        $(".form").css("display", "block");
-        $('#popupCard').empty();
-        var productie = data.productie;
-        printCard(productie);
-    }).fail(function (err1, err2) {
-        console.log('Fail');
-        console.log(err1);
-        console.log(err2);
-    });
-});
-
-
-$("#buttonTwo").on("click", function () {
-    $.ajax({
-        url: "Data.json",
-        method: 'GET',
-        dataType: "json"
-    }).done(function (data) {
-        $(".form").css("display", "block");
+        $("#popupCard.form").css("display", "block");
         $('#popupCard').empty();
         var Kennisverwerving = data.Kennisverwerving;
         printCard(Kennisverwerving);
@@ -34,12 +19,109 @@ $("#buttonTwo").on("click", function () {
 });
 
 
-var popupCard = document.getElementById("popupCard");
+$("#productie").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var productie = data.productie;
+        printCard(productie);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#samenwerking").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var samenwerking = data.samenwerking;
+        printCard(samenwerking);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#discussie").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var discussie = data.discussie;
+        printCard(discussie);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#onderzoek").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var onderzoek = data.onderzoek;
+        printCard(onderzoek);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#praktijk").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var praktijk = data.praktijk;
+        printCard(praktijk);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
 window.onclick = function (event) {
+        
+
     if (event.target == popupCard) {
         popupCard.style.display = "none";
     }
-}
+
+    }
 
 
 function printCard(data) {
@@ -64,16 +146,12 @@ function printCard(data) {
 
     for (var b in data.contact) {
         var checkbox = $('<input type="checkbox">');
-        var idCheckboxString = data.contact[b];
-        $('idCheckboxString').text();
-        idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
-        checkbox.attr('id', "check" + idCheckboxString);
+        checkbox.attr('id', "check" + data.contact[b]);
 
         var tekstCheck = $('<label>').text(data.contact[b]);
 
         var br = $('<br>');
-
-        $('#leftDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#leftDiv').append(tekstCheck);
         $('#leftDiv').append(br);
     }
@@ -84,30 +162,16 @@ function printCard(data) {
     for (var b in data.digitaal) {
 
         var checkbox = $('<input type="checkbox">');
-        var idCheckboxString = data.digitaal[b];
-        $('idCheckboxString').text();
-        idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
+        checkbox.attr('id', "check" + data.digitaal[b]);
 
         var tekstCheck = $('<label>').text(data.digitaal[b]);
 
         var br = $('<br>');
 
-        $('#rightDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#rightDiv').append(tekstCheck);
         $('#rightDiv').append(br);
     }
-    readChecked = function () {
-        var numberOfChecked = $("input:checked").length;
-        var checked = $(this).attr('id');
-        if ($('#' + checked).is(":checked")) {
-            localStorage.setItem("checked" + this.id, JSON.stringify(checked));
-        } else {
-            localStorage.removeItem("checked" + this.id);
-        }
-
-    };
-
-    $("input[type=checkbox]").on("click", readChecked);
 
     /*  var Description = $('<p>').text(data.description);
       $('#popupCard').append(Description);*/
