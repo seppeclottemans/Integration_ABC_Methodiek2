@@ -1,6 +1,7 @@
 $('document').ready(function () {
     console.log('Script loaded');
 
+    // haalt de ingevulde elementen uit local storage op en zet deze in de html
     var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
     Opleidingsonderdeel = JSON.parse(Opleidingsonderdeel);
     var ingevuldOpleidingsonderdeel = $('<h2>').text(Opleidingsonderdeel);
@@ -38,14 +39,16 @@ $('document').ready(function () {
     var ingevulddoelstellingen = $('<p>').text(doelstellingen);
     ingevulddoelstellingen.attr('id', "ingevulddoelstellingen");
     $("#lesplan1").append(ingevulddoelstellingen);
-
+    
+    // globale variabelen aanmaken 
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
     var tweedeForm = document.getElementById("tweedeForm");
     var btnVolgende = document.getElementById("btnVolgende");
     var btnVorige = document.getElementById("btnVorige");
     var btnFinish = document.getElementById("btnFinish");
-
+    
+    // het tonen van de popup's
     btnNieuw.onclick = function () {
         eersteForm.style.display = "block";
     }
@@ -60,7 +63,7 @@ $('document').ready(function () {
         tweedeForm.style.display = "none";
     }
 
-
+    // pop up sluiten als er naast de form word geklikt.
     window.onclick = function (event) {
         if (event.target == eersteForm) {
             eersteForm.style.display = "none";
@@ -70,6 +73,7 @@ $('document').ready(function () {
         }
     }
 
+    // ingevulde elementen van de popup's opslaan in local storage
     $("#btnFinish").on("click", function saveToLocalStorage() {
         var Opleidingsonderdeel = $('#Opleidingsonderdeel').val();
         localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
