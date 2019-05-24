@@ -18,7 +18,8 @@
             "Webpagina",
             "Online toets"],
 
-        "description": "Studenten luisteren naar een voordracht/lezing/les, lezen in boeken, cursusmateriaal of onlline, en/of bekijken demo's, video's, ..."
+        "description": "Studenten luisteren naar een voordracht/lezing/les, lezen in boeken, cursusmateriaal of onlline, en/of bekijken demo's, video's, ...",
+        "gebruik": 36
     },
     "productie": {
         "name": "productie",
@@ -31,14 +32,15 @@
              "Portfolio",
              "Audiovisueel product",
              "Website"],
-        "digitaal":[
+        "digitaal": [
             "Opdracht",
              "(Wiki)Pagina",
              "ePortfolio",
              "Blog",
              "Video"],
-        
-        "description": "Studenten ontwikkelen een (beroeps)product, een plan, website, analyse, theorie, model, les,… Studenten moeten hun begrip van de leerstof duidelijk tonen en aantonen hoe ze dit kunnen toepassen in de praktijk/het werkveld."
+
+        "description": "Studenten ontwikkelen een (beroeps)product, een plan, website, analyse, theorie, model, les,… Studenten moeten hun begrip van de leerstof duidelijk tonen en aantonen hoe ze dit kunnen toepassen in de praktijk/het werkveld.",
+        "gebruik": 36
     },
     "praktijk": {
         "name": "praktijk",
@@ -51,53 +53,56 @@
             "Project",
             "Externe activiteit (werkveldbezoek)",
             "Werkplekleren"],
-        "digitaal":[
-           "Vaardigheidstip", 
+        "digitaal": [
+           "Vaardigheidstip",
             "Video",
             "Opdracht",
             "Digitale toets",
             "Game",
             "Virtuele simulatie"],
-        "description": "Studenten voeren vaardigheden uit in functie van een praktijkopdracht en sturen hun handelen bij op basis van feedback (van peers, de docent, zichzelf of vanuit de taak zelf)"
+        "description": "Studenten voeren vaardigheden uit in functie van een praktijkopdracht en sturen hun handelen bij op basis van feedback (van peers, de docent, zichzelf of vanuit de taak zelf)",
+        "gebruik": 100
     },
     "samenwerking": {
         "name": "samenwerking",
-        "color":"#27ACAD",
+        "color": "#27ACAD",
         "contact": [
       "Project",
             "Opdracht",
             "Casus",
             "Brainstorm"],
-        "digitaal":[
+        "digitaal": [
            "Cursusgroepen Discussieforum",
             "Groepsopdracht",
             "(Wiki)Pagina’s",
             "Samenwerkingsbestanden",
             "Online vergadering",
             "COIL-project"],
-        "description": "Studenten werken samen aan een gezamenlijke opdracht met een bepaalde vorm van ‘output’ zoals een definitie, concept, ontwerp, verslag, beroepsproduct, … Er ontstaat een gezamenlijk proces van kennisopbouw."
+        "description": "Studenten werken samen aan een gezamenlijke opdracht met een bepaalde vorm van ‘output’ zoals een definitie, concept, ontwerp, verslag, beroepsproduct, … Er ontstaat een gezamenlijk proces van kennisopbouw.",
+        "gebruik": 36
     },
     "onderzoek": {
         "name": "onderzoek",
-        "color":"#86A32A",
+        "color": "#86A32A",
         "contact": [
       "Probleemstelling formuleren",
             "Bronnen selecteren, analyseren, verwerken",
             "Onderzoeksmethoden uitvoeren",
             "Gegevens verwerken",
             "Conclusies, advies formuleren"],
-        "digitaal":[
+        "digitaal": [
            "Opdracht",
             "ePortfolio",
             "Video",
             "Bestanden",
             "(Wiki)pagina’s"],
-        "description": "Studenten doorlopen met een kritische ingesteldheid stappen van (eenvoudig) praktijkgericht onderzoek: probleemstelling formuleren, gegevens/informatie verzamelen; data verwerken, conclusies formuleren."
+        "description": "Studenten doorlopen met een kritische ingesteldheid stappen van (eenvoudig) praktijkgericht onderzoek: probleemstelling formuleren, gegevens/informatie verzamelen; data verwerken, conclusies formuleren.",
+        "gebruik": 50
     },
 
     "discussie": {
         "name": "discussie",
-        "color":"#EF8190",
+        "color": "#EF8190",
         "contact": [
       "Discussie",
             "Debat",
@@ -108,17 +113,14 @@
             "Zelfreflectie(verslag)",
             "Coaching gesprek",
             "Verdediging (bv. Jury)"],
-        "digitaal":[
+        "digitaal": [
            "Discussieforum",
             "Digitale opdracht",
             "Chat",
             "Online vergadering",
             "Peer assessement",
             "Cursusgroepen"],
-        "description": "Studenten verwoorden hun vragen, ideeën en argumenten, verantwoorden gemaakt keuzen en stellen ideeën van peers/docenten/zichzelf kritisch in vraag."
+        "description": "Studenten verwoorden hun vragen, ideeën en argumenten, verantwoorden gemaakt keuzen en stellen ideeën van peers/docenten/zichzelf kritisch in vraag.",
+        "gebruik": 36
     }
 }
-
-
-
-

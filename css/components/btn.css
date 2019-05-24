@@ -22,3 +22,7 @@
     background-color: white;
     border: 1px solid black;
 }
+
+.btn-fix {
+    width: 160px;
+}

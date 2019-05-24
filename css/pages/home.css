@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+
 }
 
 #Opleidingsonderdeel,
@@ -67,7 +67,7 @@ h1 {
 }
 
 .lesplan1 {
-    width: 84.86%;
+    width: 85.15%;
 }
 
 
@@ -81,19 +81,31 @@ main {
 }
 
 header {
-    padding-top: 5%;
+    padding-top: 10%;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     box-sizing: content-box;
-    width: 84.86%;
-    float: left;
-
+    width: 85.15%;
+   
 
 }
 
+
+/*Specific settings for the header on the home page */
+#header-home {
+    width: 80%;
+    height: 10%;
+}
+
+#header-home hr {
+    margin-bottom: 10%;
+}
+
+
+/* end of header-home */
 .title {
     margin-right: auto;
 }
@@ -112,22 +124,16 @@ hr {
     margin-bottom: 10%;
 }
 
-#doelstellingenWeek{
+#doelstellingenWeek {
     height: 25vh;
     margin-bottom: 10%;
 }
-}
 
-/*
-@media only screen and (min-width: 1024px) {
-    hr {
-        width: 150%
-    }
 
-    
+
     body{
         margin: auto
-        
+
     }
     main{
         padding-left: 10%;
