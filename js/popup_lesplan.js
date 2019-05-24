@@ -1,4 +1,6 @@
 $('document').ready(function () {
+    var weergave1 = localStorage.getItem('weergave1');
+    console.log(weergave1);
 
     // haalt de ingevulde elementen uit local storage op en zet deze in de html
     var weekBereik = localStorage.getItem('weekBereik');
@@ -38,5 +40,5 @@ $('document').ready(function () {
             eersteForm.style.display = "none";
         }
     }
-
+    
 });

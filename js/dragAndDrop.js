@@ -56,7 +56,6 @@ $(function () {
 
             var deHeader = $(this).parent();
             var deDiv = deHeader.parent();
-            console.log('ye');
 
             $(deDiv).remove();
 
@@ -65,7 +64,6 @@ $(function () {
 
         $(".klaarButton").on('click', function () {
             var faseColumn = $(".column");
-            console.log(faseColumn);
             var rownumber = 1;
             $(".fase").each(function (faseColumn) {
                 var columnId = this.id;
@@ -76,7 +74,6 @@ $(function () {
                     positions: positions
                 };
                 localStorage.setItem('weergave' + rownumber, JSON.stringify(weergave));
-                console.log(weergave);
                 rownumber++;
             });
 
