@@ -70,18 +70,17 @@ h1 {
     width: 85.15%;
 }
 
-
 .beschrijving {
     width: 50%;
 }
 
 main {
-    margin-left: 15.13%;
+    margin-left: 15.85%;
 
 }
 
 header {
-    padding-top: 10%;
+    padding-top: 5%;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
@@ -108,13 +107,14 @@ hr {
 #ingevulddoelstellingenWeek,
 #ingevuldweekBereik {
     font-family: 'Avenir LT Std 95 Black';
-    height: 25vh;
-    margin-bottom: 10%;
+        
 }
 
+/*
 #doelstellingenWeek{
     height: 25vh;
     margin-bottom: 10%;
 }
+*/
 
 

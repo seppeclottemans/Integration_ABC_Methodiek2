@@ -9,17 +9,14 @@ body {
     display: table;
 }
 
-.korteheader{
-padding-top: 10%;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    box-sizing: content-box;
-    width: 63.96%;;
-    
+/*******************Titels/heading*****************/
+header {
+    padding-top: 10%;
+    width: 63.96%;
+    margin-left: 0%;
+   
 }
+
 #fase-view {
     display: inline-block;
     display: inline-block;
@@ -51,10 +48,11 @@ h1 {
     display: inline-block;
 }
 
+/*******************De Kaartjes*****************/
 .klaarButton {
     position: absolute;
-    left: 57.91%;
-    top: 87.24%;
+    left: 54.91%;
+    top: 12.24%;
 }
 
 .kaartjes {
@@ -77,11 +75,12 @@ h1 {
 .groeneKaart,
 .paarseKaart,
 .geleKaart {
-/*    text-align: center;*/
+    /*    text-align: center;*/
     margin-bottom: 12%;
     width: 162.47px;
     height: 88.78px;
 }
+
 .oranjeKaart p,
 .blauweKaart p,
 .rozeKaart p,
@@ -89,7 +88,7 @@ h1 {
 .paarseKaart p,
 .geleKaart p {
     text-align: center;
-        padding-top:10px;
+    padding-top: 10px;
 
 }
 
@@ -123,54 +122,34 @@ h1 {
     color: white;
 }
 
-.snapTarget {
-    margin-top: 0px;
-    width: 162.47px;
-    height: 88.78px;
-    margin-left: 0px;
-    border: solid black 1px;
-    display: inline-block;
-    float: left;
-}
-
-.snapTarget p {
-    margin: 0;
-    padding-top: 25%;
-    text-align: center;
-}
 
 li {
     list-style-type: none;
 }
 
-#sleepHier {
-    position: absolute;
-    top: 36%;
-    left: 19%;
-    z-index: -1;
-}
-
-/******************grid probeersel********/
+/******************grid waarop je de kaartjes sleept********/
 
 
-#fase-column {
+#fase-column1, 
+#fase-column2, 
+#fase-column3, 
+#fase-column4 {
+    border: 1px solid black;
     height: 300px;
-    width: 162.47px;
-    margin: 0px 10px 0px 0px;
+    width: 100%;
+    margin: 0px 5px 0px 0px;
     display: grid;
     grid-template-columns: 162.47px;
-    grid-template-rows: 88.77px 88.77px 88.77px 88.77px;
+    grid-template-rows: 88.77px 88.77px 88.77px 88.77px 88.77px;
     overflow-y: scroll;
     grid-auto-flow: column;
 }
 
 .container {
-    width: 650px;
     display: flex;
     float: left;
     overflow-x: scroll;
-    border: 1px black;
-        /*    justify-content:space-between;*/
+    /*    justify-content:space-between;*/
 }
 
 .kaartjes-placeholder {
@@ -178,6 +157,7 @@ li {
     height: 88.77px;
 }
 
+/************************stijling voor de button & 'cancel' kruisjes*****/
 .kaartje-start {
     width: 200px;
     float: right;
@@ -186,17 +166,18 @@ li {
 .start-position-kaartjes {
     position: absolute;
     top: 5%;
-    right: 0%;
+    right: -20px;
     width: 200px;
     display: flex;
     flex-direction: column;
+    
 }
 
-.kaartje-start .portlet-header .ui-icon{
+.kaartje-start .portlet-header .ui-icon {
     display: none;
 }
 
-.container .portlet-header .ui-icon{
+.container .portlet-header .ui-icon {
     display: block;
     text-indent: -9999em;
     padding: 3px 0px 0px 3px;
@@ -205,3 +186,32 @@ li {
     height: 17px;
 }
 
+@media only screen and (min-width: 1440px) {
+    
+    .korteheader{
+        width: 250%
+    }
+    header {
+    padding-top: 5%;
+    width: 76%;
+    
+}
+    .klaarButton{
+        position: absolute;
+    left: 59.60%;
+    top: 8%;
+    }
+    .oranjeKaart,
+.blauweKaart,
+.rozeKaart,
+.groeneKaart,
+.paarseKaart,
+.geleKaart {
+    /*    text-align: center;*/
+    margin-bottom: 7%;
+  
+    
+    
+}
+    
+}
