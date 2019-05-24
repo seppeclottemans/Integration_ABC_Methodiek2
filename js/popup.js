@@ -39,7 +39,7 @@ $('document').ready(function () {
     var ingevulddoelstellingen = $('<p>').text(doelstellingen);
     ingevulddoelstellingen.attr('id', "ingevulddoelstellingen");
     $("#lesplan1").append(ingevulddoelstellingen);
-    
+
     // globale variabelen aanmaken 
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
@@ -49,7 +49,6 @@ $('document').ready(function () {
     var btnFinish = document.getElementById("btnFinish");
     var popupCard = document.getElementById("popupCard");
 
-    
     // het tonen van de popup's
     btnNieuw.onclick = function () {
         eersteForm.style.display = "block";
@@ -73,11 +72,11 @@ $('document').ready(function () {
         if (event.target == tweedeForm) {
             tweedeForm.style.display = "none";
         }
-        
 
-    if (event.target == popupCard) {
-        popupCard.style.display = "none";
-    }
+
+        if (event.target == popupCard) {
+            popupCard.style.display = "none";
+        }
 
     }
 
