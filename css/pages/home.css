@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    max-width: 1024px;
+    
 }
 
 #Opleidingsonderdeel,
@@ -116,3 +116,22 @@ hr {
     height: 25vh;
     margin-bottom: 10%;
 }
+}
+
+/*
+@media only screen and (min-width: 1024px) {
+    hr {
+        width: 150%
+    }
+
+    
+    body{
+        margin: auto
+        
+    }
+    main{
+        padding-left: 10%;
+        widows: 100%;
+    }
+}
+*/

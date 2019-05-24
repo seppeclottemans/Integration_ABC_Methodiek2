@@ -3,11 +3,11 @@ console.log("script linked");
 
 $("#buttonOne").on("click", function () {
     $.ajax({
-        url: "cards.json",
+        url: "data/Data.json",
         method: 'GET',
         dataType: "json"
     }).done(function (data) {
-        $(".form").css("display", "block");
+        $("#popupCard.form").css("display", "block");
         $('#popupCard').empty();
         var productie = data.productie;
         printCard(productie);
@@ -21,11 +21,11 @@ $("#buttonOne").on("click", function () {
 
 $("#buttonTwo").on("click", function () {
     $.ajax({
-        url: "cards.json",
+        url: "data/Data.json",
         method: 'GET',
         dataType: "json"
     }).done(function (data) {
-        $(".form").css("display", "block");
+        $("#popupCard.form").css("display", "block");
         $('#popupCard').empty();
         var Kennisverwerving = data.Kennisverwerving;
         printCard(Kennisverwerving);
@@ -36,13 +36,6 @@ $("#buttonTwo").on("click", function () {
     });
 });
 
-
-var popupCard = document.getElementById("popupCard");
-window.onclick = function (event) {
-    if (event.target == popupCard) {
-        popupCard.style.display = "none";
-    }
-}
 
 
 function printCard(data) {
@@ -72,8 +65,7 @@ function printCard(data) {
         var tekstCheck = $('<label>').text(data.contact[b]);
 
         var br = $('<br>');
-
-        $('#leftDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#leftDiv').append(tekstCheck);
         $('#leftDiv').append(br);
     }
@@ -90,7 +82,7 @@ function printCard(data) {
 
         var br = $('<br>');
 
-        $('#rightDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#rightDiv').append(tekstCheck);
         $('#rightDiv').append(br);
     }

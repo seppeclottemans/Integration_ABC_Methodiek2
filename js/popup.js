@@ -47,6 +47,8 @@ $('document').ready(function () {
     var btnVolgende = document.getElementById("btnVolgende");
     var btnVorige = document.getElementById("btnVorige");
     var btnFinish = document.getElementById("btnFinish");
+    var popupCard = document.getElementById("popupCard");
+
     
     // het tonen van de popup's
     btnNieuw.onclick = function () {
@@ -71,6 +73,12 @@ $('document').ready(function () {
         if (event.target == tweedeForm) {
             tweedeForm.style.display = "none";
         }
+        
+
+    if (event.target == popupCard) {
+        popupCard.style.display = "none";
+    }
+
     }
 
     // ingevulde elementen van de popup's opslaan in local storage
