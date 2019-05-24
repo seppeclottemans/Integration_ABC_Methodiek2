@@ -1,11 +1,11 @@
 $(document.body).on('click', '.portlet' ,function(){
     var thisElement = this;
     $.ajax({
-        url: "data/Data.json",
+        url: "Data/Data.json",
         method: 'GET',
         dataType: "json"
     }).done(function (data) {
-        var role = $(thisElement).data( "role" );
+        var role = $(thisElement).data("role");
         $("#popupCard.form").css("display", "block");
         $('#popupCard').empty();
         var cardName = data[role];
