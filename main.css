@@ -1,0 +1,96 @@
+body {
+    max-width: 1024px;
+    margin: auto;
+
+}
+
+
+.nav {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.hulp hr {
+
+    width: 100%;
+    float: left;
+    margin: 0;
+
+
+}
+
+.hulp p {
+    display: inline-block;
+    width: 70%;
+    margin: 0;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.hulp h2 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+.kennisverwerving,
+.samenwerking,
+.discussie {
+    padding: 10%;
+    display: inline-block;
+    width: 10%;
+    margin-bottom: 2%;
+    margin-right: 2.5%;
+    color: white;
+
+}
+
+.productie,
+.praktijk,
+.onderzoek {
+    padding: 10%;
+    display: inline-block;
+    margin-right: 2.5%;
+    width: 10%;
+    color: white;
+
+}
+
+.kennisverwerving {
+    background-color: #F1894D;
+    margin-left: 1.25%;
+}
+
+.samenwerking {
+    background-color: #27ACAD
+}
+
+.discussie {
+    background-color: #EF8190
+}
+
+.productie {
+    background-color: #F3B30A;
+    margin-left: 1.25%
+}
+
+.praktijk {
+    background-color: #6561A9
+}
+
+.onderzoek {
+    background-color: #86A32A
+}
+
+.marge h2{
+    margin-top: 10%
+}
+
+@media only screen and (max-width: 1440px) {
+    *{
+        margin: 0px;
+    }
+    
+}

@@ -1,0 +1,174 @@
+textarea{
+    padding: 3%;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.txtForm h1 {
+    margin-bottom: 1em;
+}
+
+#eersteForm .inhoudForm {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    width: 420px;
+    height: 566px;
+}
+
+#tweedeForm .inhoudForm {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    width: 714px;
+    height: 608px;
+}
+
+#btnVorige {
+    margin-right: 5%;
+}
+
+#btnVolgende,
+#btnVorige,
+#btnFinish {
+    float: right;
+    margin-top: 3%;
+    color: white;
+    background-color: black;
+    width: 117px;
+    border-radius: 24px;
+    padding: 5px 0 5px 0;
+}
+
+#btnVolgende{
+    margin-top: 15%;
+}
+
+#btnNieuw {
+    float: right;
+}
+
+.color {
+    width: 16.6666666666666666%;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.color1 {
+    background-color: #F3B30A;
+}
+
+.color2 {
+    background-color: #6561A9;
+}
+
+.color3 {
+    background-color: #86A32A;
+
+}
+
+.color4 {
+    background-color: #EF8190;
+}
+
+.color5 {
+    background-color: #27ACAD;
+}
+
+.color6 {
+    background-color: #EF8109;
+}
+
+#eersteForm .txtForm {
+    padding: 10% 15%;
+}
+
+#tweedeForm .txtForm {
+    padding: 5% 10% 0%;
+}
+
+.txtForm input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 23px;
+
+}
+
+.txtForm textarea {
+    resize: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 116px;
+
+}
+
+.txtForm h3 {
+    margin: 18px 0;
+}
+
+.txtForm h1 {
+    margin: 21px 0;
+}
+
+#tweedeForm #btnVolgende,
+#btnVorige #btnFinish {
+    float: right;
+    margin-top: 60px;
+}
+
+#rightDiv{
+    float: right;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid white;
+    width: 310px;
+    height: 301px;
+    margin-right: 45px;
+}
+
+#leftDiv{
+    display: inline-block;
+    border: 1px solid white;
+    width: 310px;
+    height: 301px;
+    margin-left: 44px;
+}
+
+#popupContent h1 {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#popupContent h3{
+    width: 100%;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+#popupContent label {
+    margin-left: 10px;
+}
+
+#popupContent {
+    color: white;
+    margin:15% auto;
+    padding:0;
+    width: 714px;
+    height: 432px;
+}

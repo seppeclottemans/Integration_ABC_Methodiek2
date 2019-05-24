@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesplan</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+   <!--- navigatie --->
+    <nav class="linker-navigatie">
+        <ul>
+            <li>
+                <a href="index.html" id="lesplan-knop">
+                    <p>Lesplannen</p>
+                </a>
+            </li>
+            <li>
+                <a href="hulp.html" class="help">
+                    <p>Help</p>
+                </a>
+            </li>
+            <img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo">
+        </ul>
+    </nav>
+
+    <main>
+       <!--- header --->
+        <header>
+            <h1 class="title">Lesplannen</h1>
+            <!--- toont de eerste popup --->
+            <button class="btn-zwart" id="btnNieuw">+Maak nieuwe fase</button>
+
+            <hr>
+        </header>
+        
+        <!--- hier komt de ingevulde informatie uit de form/popup --->
+        <div class="lesplan" id="fase1">
+
+        </div>
+        
+        <!--- popup --->
+        <div id="eersteForm" class="form">
+            <div class="inhoudForm">
+                <div class="color1 color"></div>
+                <div class="color2 color"></div>
+                <div class="color3 color"></div>
+                <div class="color4 color"></div>
+                <div class="color5 color"></div>
+                <div class="color6 color"></div>
+                <div class="txtForm">
+                    <h1>Fase info</h1>
+                    <h3>week(en):</h3>
+                    <input id="weekBereik" type="text" placeholder="week x-y">
+                    <h3>doelstellingen:</h3>
+                    <textarea id="doelstellingenWeek" type="text">
+                    </textarea>
+                    <button onclick="window.location.href = 'weekplan.html';" class="btn-zwart" id="btnFinish">finish</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/popup_lesplan.js"></script>
+</body>
+
+</html>
