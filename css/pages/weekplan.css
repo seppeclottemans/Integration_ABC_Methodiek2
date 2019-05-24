@@ -1,6 +1,6 @@
 body {
     font-family: 'Avenir LT Std 55 Roman';
-    max-width: 1024px;
+    max-width: 100%;
 }
 
 .clearfix::after {
@@ -9,13 +9,17 @@ body {
     display: table;
 }
 
-header {
-    padding-top: 10%;
-    width: 63.96%;
-    margin-left: 0%;
-    float: left;
+.korteheader{
+padding-top: 10%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: content-box;
+    width: 63.96%;;
+    
 }
-
 #fase-view {
     display: inline-block;
     display: inline-block;
