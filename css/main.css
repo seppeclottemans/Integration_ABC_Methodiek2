@@ -7,6 +7,7 @@
 @import url(components/linker-nav.css);
 @import url(components/btn.css);
 @import url(components/popup.css);
+@import url(components/chart.css);
 
 /* pages */
 @import url(pages/home.css);

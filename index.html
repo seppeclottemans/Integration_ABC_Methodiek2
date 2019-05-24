@@ -10,7 +10,7 @@
 
 <body>
 
-   <!--- navigatie --->
+    <!--- navigatie --->
     <nav class="linker-navigatie">
         <ul>
             <li>
@@ -28,27 +28,78 @@
     </nav>
 
     <main>
-       <!--- header --->
-        <header>
-            <h1 class="title">Lesplannen</h1>
+        <!--- header --->
+        <header id="header-home">
+            <h1 class="title">Mijn lesplannen</h1>
             <!--- toont de eerste pop up --->
-            <button class="btn-zwart" id="btnNieuw">+Maak nieuw lesplan</button>
-
+            <button class="btn-zwart btn-fix" id="btnNieuw">
+                +Maak nieuw lesplan
+            </button>
             <hr>
         </header>
-        
-        <div id="popupCard" class="form">
-        </div>
-    
 
-    <button id="buttonOne">button1</button>
-    <button id="buttonTwo">button2</button>
-       <!--- hier komt de ingevulde informatie uit de form/popup  --->
+        <div class="wrapper-cards">
+            <!--Hier komen de de dummy kaartjes met grafieken-->
+            <div class="cardContainer">
+                <div class="colorBar">
+                    <div class="colorLine1 colorLineChart"></div>
+                    <div class="colorLine2 colorLineChart"></div>
+                    <div class="colorLine3 colorLineChart"></div>
+                    <div class="colorLine4 colorLineChart"></div>
+                    <div class="colorLine5 colorLineChart"></div>
+                    <div class="colorLine6 colorLineChart"></div>
+                </div>
+
+                <div class="info-lesplan">
+                    <div class="text-lesplan"> LOREM IPSIL ?ANO NOJZANAN ONAGZOA%
+                        EAN NANGMJAEG%OJA
+                        AEGAEBNA%EBOABE%EBNBEOAEB
+                        A%BAEJJE lesplan a,,bBA%BE?%AEBNPBN docent AE%EBNEBA EBPNBAEPKAEB?AKBE%KB%PABAEB%AEB?%KAB%AEB? AB?KEA?BAKB?E*AEBbek,amkb,ab
+                    </div>
+
+                    <div class="chart-lesplan">
+                        <canvas id="canvas-0" style="display: block; height: 201px; width: 403px;" width="806" height="402" class="chartjs-render-monitor">
+                        </canvas>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="cardContainer">
+                <div class="colorBar">
+                    <div class="colorLine1 colorLineChart"></div>
+                    <div class="colorLine2 colorLineChart"></div>
+                    <div class="colorLine3 colorLineChart"></div>
+                    <div class="colorLine4 colorLineChart"></div>
+                    <div class="colorLine5 colorLineChart"></div>
+                    <div class="colorLine6 colorLineChart"></div>
+                </div>
+
+                <div class="info-lesplan">
+                    <div class="text-lesplan"> LOREM IPSIL ?ANO NOJZANAN ONAGZOA%
+                        EAN NANGMJAEG%OJA
+                        AEGAEBNA%EBOABE%EBNBEOAEB
+                        A%BAEJJE lesplan a,,bBA%BE?%AEBNPBN docent AE%EBNEBA EBPNBAEPKAEB?AKBE%KB%PABAEB%AEB?%KAB%AEB? AB?KEA?BAKB?E*AEBbek,amkb,ab
+                    </div>
+
+                    <div class="chart-lesplan">
+                        <canvas id="canvas-1" style="display: block; height: 201px; width: 403px;" width="806" height="402" class="chartjs-render-monitor">
+                        </canvas>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--- hier komt de ingevulde informatie uit de form/popup  --->
         <div class="lesplan1" id="lesplan1">
 
         </div>
 
-       <!--- eerste popup --->
+        <!--- eerste popup --->
         <div id="eersteForm" class="form">
             <div class="inhoudForm">
                 <div class="color1 color"></div>
@@ -97,7 +148,7 @@
 
     </main>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/popup.js"></script>
@@ -106,6 +157,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/getUsageCards.js"></script>
+    <script src="js/customChart.js"></script>
 </body>
 
 </html>

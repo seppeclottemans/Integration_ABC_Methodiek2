@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+
 }
 
 #Opleidingsonderdeel,
@@ -91,9 +91,21 @@ header {
     width: 84.86%;
     float: left;
 
-
 }
 
+
+/*Specific settings for the header on the home page */
+#header-home {
+    width: 80%;
+    height: 10%;
+}
+
+#header-home hr {
+    margin-bottom: 10%;
+}
+
+
+/* end of header-home */
 .title {
     margin-right: auto;
 }
@@ -112,7 +124,7 @@ hr {
     margin-bottom: 10%;
 }
 
-#doelstellingenWeek{
+#doelstellingenWeek {
     height: 25vh;
     margin-bottom: 10%;
 }
@@ -124,10 +136,10 @@ hr {
         width: 150%
     }
 
-    
+
     body{
         margin: auto
-        
+
     }
     main{
         padding-left: 10%;
