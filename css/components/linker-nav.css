@@ -68,13 +68,16 @@ a:visited {
 
 @media only screen and (min-width: 1440px) {
     #lesplan-knop{
-        margin-left: 20%
+        margin-left: 23%;
+        margin-top: 45%
     }
     .help{
-        margin-left: 20%
+        margin-left: 20%;
+        margin-top: 20%;
     }
     .ehb-logo{
         margin-left: 15px;
     }
+    
 }
 */

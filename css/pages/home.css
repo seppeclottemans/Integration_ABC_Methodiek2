@@ -67,7 +67,7 @@ h1 {
 }
 
 .lesplan1 {
-    width: 84.86%;
+    width: 85.15%;
 }
 
 
@@ -81,15 +81,15 @@ main {
 }
 
 header {
-    padding-top: 5%;
+    padding-top: 10%;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     box-sizing: content-box;
-    width: 84.86%;
-    float: left;
+    width: 85.15%;
+   
 
 }
 
@@ -128,13 +128,7 @@ hr {
     height: 25vh;
     margin-bottom: 10%;
 }
-}
 
-/*
-@media only screen and (min-width: 1024px) {
-    hr {
-        width: 150%
-    }
 
 
     body{

@@ -1,16 +1,18 @@
 console.log("script linked");
-
-
-$("#buttonOne").on("click", function () {
+        
+$(document.body).on('click', '.portlet' ,function(){
+    var thisElement = this;
     $.ajax({
         url: "data/Data.json",
         method: 'GET',
         dataType: "json"
     }).done(function (data) {
+        var role = $(thisElement).data( "role" );
         $("#popupCard.form").css("display", "block");
         $('#popupCard').empty();
-        var productie = data.productie;
-        printCard(productie);
+        var cardName = data[role];
+        printCard(cardName);
+
     }).fail(function (err1, err2) {
         console.log('Fail');
         console.log(err1);
@@ -19,23 +21,16 @@ $("#buttonOne").on("click", function () {
 });
 
 
-$("#buttonTwo").on("click", function () {
-    $.ajax({
-        url: "data/Data.json",
-        method: 'GET',
-        dataType: "json"
-    }).done(function (data) {
-        $("#popupCard.form").css("display", "block");
-        $('#popupCard').empty();
-        var Kennisverwerving = data.Kennisverwerving;
-        printCard(Kennisverwerving);
-    }).fail(function (err1, err2) {
-        console.log('Fail');
-        console.log(err1);
-        console.log(err2);
-    });
-});
 
+
+window.onclick = function (event) {
+
+
+    if (event.target == popupCard) {
+        popupCard.style.display = "none";
+    }
+
+}
 
 
 function printCard(data) {
@@ -60,7 +55,10 @@ function printCard(data) {
 
     for (var b in data.contact) {
         var checkbox = $('<input type="checkbox">');
-        checkbox.attr('id', "check" + data.contact[b]);
+        var idCheckboxString = data.contact[b];
+        $('idCheckboxString').text();
+        idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
+        checkbox.attr('id', "check" + idCheckboxString);
 
         var tekstCheck = $('<label>').text(data.contact[b]);
 
@@ -76,16 +74,29 @@ function printCard(data) {
     for (var b in data.digitaal) {
 
         var checkbox = $('<input type="checkbox">');
-        checkbox.attr('id', "check" + data.digitaal[b]);
+        var idCheckboxString = data.digitaal[b];
+        $('idCheckboxString').text();
+        idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
+        checkbox.attr('id', "check" + idCheckboxString);
 
         var tekstCheck = $('<label>').text(data.digitaal[b]);
 
         var br = $('<br>');
-
-        $(tekstCheck).prepend(checkbox);
+        $('#rightDiv').append(checkbox);
         $('#rightDiv').append(tekstCheck);
         $('#rightDiv').append(br);
     }
+    readChecked = function () {
+        var numberOfChecked = $("input:checked").length;
+        var checked = $(this).attr('id');
+        if ($('#' + checked).is(":checked")) {
+            localStorage.setItem("checked" + this.id, JSON.stringify(checked));
+        } else {
+            localStorage.removeItem("checked" + this.id);
+        }
+
+    };
+    $("input[type=checkbox]").on("click", readChecked);
 
     /*  var Description = $('<p>').text(data.description);
       $('#popupCard').append(Description);*/
