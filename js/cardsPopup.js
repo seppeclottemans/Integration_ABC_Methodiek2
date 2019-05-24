@@ -1,25 +1,7 @@
 console.log("script linked");
 
 
-$("#buttonOne").on("click", function () {
-    $.ajax({
-        url: "data/Data.json",
-        method: 'GET',
-        dataType: "json"
-    }).done(function (data) {
-        $("#popupCard.form").css("display", "block");
-        $('#popupCard').empty();
-        var productie = data.productie;
-        printCard(productie);
-    }).fail(function (err1, err2) {
-        console.log('Fail');
-        console.log(err1);
-        console.log(err2);
-    });
-});
-
-
-$("#buttonTwo").on("click", function () {
+$("#kennisverwerving").on("click", function () {
     $.ajax({
         url: "data/Data.json",
         method: 'GET',
@@ -36,6 +18,110 @@ $("#buttonTwo").on("click", function () {
     });
 });
 
+
+$("#productie").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var productie = data.productie;
+        printCard(productie);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#samenwerking").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var samenwerking = data.samenwerking;
+        printCard(samenwerking);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#discussie").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var discussie = data.discussie;
+        printCard(discussie);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#onderzoek").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var onderzoek = data.onderzoek;
+        printCard(onderzoek);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+$("#praktijk").on("click", function () {
+    $.ajax({
+        url: "data/Data.json",
+        method: 'GET',
+        dataType: "json"
+    }).done(function (data) {
+        $("#popupCard.form").css("display", "block");
+        $('#popupCard').empty();
+        var praktijk = data.praktijk;
+        printCard(praktijk);
+        
+    }).fail(function (err1, err2) {
+        console.log('Fail');
+        console.log(err1);
+        console.log(err2);
+    });
+});
+
+
+window.onclick = function (event) {
+        
+
+    if (event.target == popupCard) {
+        popupCard.style.display = "none";
+    }
+
+    }
 
 
 function printCard(data) {
