@@ -1,5 +1,3 @@
-console.log("script linked");
-        
 $(document.body).on('click', '.portlet' ,function(){
     var thisElement = this;
     $.ajax({
