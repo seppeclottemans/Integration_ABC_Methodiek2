@@ -3,7 +3,7 @@
     font-size: 14px;
     font-family: 'Avenir LT Std 55 Roman', sans-serif;
     /* >>> delete if not already used*/
-    width: 8%;
+    width: 80px;
     height: 100vh;
     border-right-style: inset;
 }
@@ -67,6 +67,9 @@ a:visited {
 
 
 @media only screen and (min-width: 1440px) {
+    .linker-navigatie {
+    width: 110px;
+}
     #lesplan-knop{
         margin-left: 23%;
         margin-top: 45%
