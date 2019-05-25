@@ -1,12 +1,18 @@
 $('document').ready(function () {
 
     // haalt de ingevulde elementen uit local storage op en zet deze in de html
+    var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
+    Opleidingsonderdeel = JSON.parse(Opleidingsonderdeel);
+    var ingevuldOpleidingsonderdeel = $('<h1>').text(Opleidingsonderdeel);
+    ingevuldOpleidingsonderdeel.attr('class', "title");
+    $('header').prepend(ingevuldOpleidingsonderdeel);
+
     var weekBereik = localStorage.getItem('weekBereik');
     weekBereik = JSON.parse(weekBereik);
     var ingevuldweekBereik = $('<p>').text(weekBereik);
     ingevuldweekBereik.attr('id', "ingevuldweekBereik");
     $('#fase1').append(ingevuldweekBereik);
-    
+
     var doelstellingenWeek = localStorage.getItem('doelstellingenWeek');
     doelstellingenWeek = JSON.parse(doelstellingenWeek);
     var ingevulddoelstellingenWeek = $('<p>').text(doelstellingenWeek);
@@ -38,5 +44,5 @@ $('document').ready(function () {
             eersteForm.style.display = "none";
         }
     }
-    
+
 });
