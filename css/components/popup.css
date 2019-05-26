@@ -1,4 +1,4 @@
-textarea{
+textarea {
     padding: 3%;
 }
 
@@ -49,7 +49,7 @@ textarea{
     padding: 5px 0 5px 0;
 }
 
-#btnVolgende{
+#btnVolgende {
     margin-top: 15%;
 }
 
@@ -129,7 +129,7 @@ textarea{
     margin-top: 60px;
 }
 
-#rightDiv{
+#rightDiv {
     float: right;
     display: inline-block;
     text-align: left;
@@ -139,7 +139,7 @@ textarea{
     margin-right: 45px;
 }
 
-#leftDiv{
+#leftDiv {
     display: inline-block;
     border: 1px solid white;
     width: 310px;
@@ -153,22 +153,24 @@ textarea{
     text-align: center;
 }
 
-#popupContent h3{
+#popupContent h3 {
     width: 100%;
     border-bottom: 1px solid white;
     text-align: center;
     padding-bottom: 5px;
 }
 
-
-#popupContent label {
-    margin-left: 10px;
-}
-
 #popupContent {
     color: white;
-    margin:15% auto;
-    padding:0;
+    margin: 15% auto;
+    padding: 0;
     width: 714px;
     height: 432px;
+}
+
+.check {
+    margin-top: 4.5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }

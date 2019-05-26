@@ -1,4 +1,4 @@
-$(document.body).on('click', '.portlet' ,function(){
+$(document.body).on('click', '.portlet', function () {
     var thisElement = this;
     $.ajax({
         url: "Data/Data.json",
@@ -57,6 +57,7 @@ function printCard(data) {
         $('idCheckboxString').text();
         idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
         checkbox.attr('id', "check" + idCheckboxString);
+        checkbox.attr('class', "check");
 
         var tekstCheck = $('<label>').text(data.contact[b]);
 
@@ -76,13 +77,14 @@ function printCard(data) {
         $('idCheckboxString').text();
         idCheckboxString = idCheckboxString.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
         checkbox.attr('id', "check" + idCheckboxString);
+        checkbox.attr('class', "check");
 
         var tekstCheck = $('<label>').text(data.digitaal[b]);
 
         var br = $('<br>');
-        $('#rightDiv').append(checkbox);
+        $(tekstCheck).prepend(checkbox);
         $('#rightDiv').append(tekstCheck);
-        $('#rightDiv').append(br);
+        $('#rightDiv').append(br);;
     }
     readChecked = function () {
         var numberOfChecked = $("input:checked").length;
