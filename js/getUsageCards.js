@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log('Script Linked');
 
 
     //GLobal array, which the usageData will be stored in
