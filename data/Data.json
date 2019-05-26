@@ -19,7 +19,7 @@
             "Online toets"],
 
         "description": "Studenten luisteren naar een voordracht/lezing/les, lezen in boeken, cursusmateriaal of onlline, en/of bekijken demo's, video's, ...",
-        "gebruik": 36
+        "gebruik": 0
     },
     "productie": {
         "name": "productie",
@@ -61,7 +61,7 @@
             "Game",
             "Virtuele simulatie"],
         "description": "Studenten voeren vaardigheden uit in functie van een praktijkopdracht en sturen hun handelen bij op basis van feedback (van peers, de docent, zichzelf of vanuit de taak zelf)",
-        "gebruik": 100
+        "gebruik": 80
     },
     "samenwerking": {
         "name": "samenwerking",
@@ -97,7 +97,7 @@
             "Bestanden",
             "(Wiki)pagina’s"],
         "description": "Studenten doorlopen met een kritische ingesteldheid stappen van (eenvoudig) praktijkgericht onderzoek: probleemstelling formuleren, gegevens/informatie verzamelen; data verwerken, conclusies formuleren.",
-        "gebruik": 50
+        "gebruik": 20
     },
 
     "discussie": {
@@ -121,6 +121,6 @@
             "Peer assessement",
             "Cursusgroepen"],
         "description": "Studenten verwoorden hun vragen, ideeën en argumenten, verantwoorden gemaakt keuzen en stellen ideeën van peers/docenten/zichzelf kritisch in vraag.",
-        "gebruik": 36
+        "gebruik": 99
     }
 }

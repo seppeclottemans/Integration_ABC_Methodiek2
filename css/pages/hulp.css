@@ -1,7 +1,7 @@
 .info {
     width: 85.15%;
     text-align: center;
-   
+
 }
 .marge p{
     text-align: justify;
@@ -40,8 +40,6 @@
 
 .kennisverwerving {
     background-color: #F1894D;
-    text-align: center;
-
 }
 
 .samenwerking {
@@ -68,15 +66,15 @@
 .info h2 {
     padding: 3%
 }
-.extrainformatie{
+
+.extrainformatie {
     color: white;
     padding: 2%
-    
 }
 
 @media only screen and (min-width: 1440px) {
-    .info p{
-        font-size:  20px;
+    .info p {
+        font-size: 20px;
     }
 
 }
