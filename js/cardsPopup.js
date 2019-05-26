@@ -1,3 +1,4 @@
+// ajax request naar locale json file met de informatie van de kaartjes
 $(document.body).on('click', '.portlet', function () {
     var thisElement = this;
     $.ajax({
@@ -20,7 +21,7 @@ $(document.body).on('click', '.portlet', function () {
 
 
 
-
+// popup kunnen weg klikken
 window.onclick = function (event) {
 
 
@@ -30,7 +31,7 @@ window.onclick = function (event) {
 
 }
 
-
+// info van het kaartje tonen waneer er op een kaart geklikt word. 
 function printCard(data) {
     var color = data.color;
 

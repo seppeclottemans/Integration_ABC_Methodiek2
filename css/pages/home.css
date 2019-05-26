@@ -137,7 +137,14 @@ hr {
     main{
         padding-left: 10%;
         widows: 100%;
-    }
+}
+.text-lesplan{
+    margin-right: 25%;
+}
+
+.text-lesplan p{
+    margin-bottom: 30px;
+}
 
 @media only screen and (min-width: 1440px) {
     main{
