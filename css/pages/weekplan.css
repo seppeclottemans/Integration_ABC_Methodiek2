@@ -14,7 +14,7 @@ header {
     padding-top: 10%;
     width: 63.96%;
     margin-left: 0%;
-    float: left;
+   
 }
 
 #fase-view {
@@ -23,14 +23,14 @@ header {
     float: left;
 }
 
-h1 {
+h1 { 
     font-family: 'Avenir LT Std 95 Black';
     font-size: 24pt;
 }
 
 .content {
     margin-left: 0%;
-    width: 63.96%;
+    width: 95%;
     margin-right: 0;
     float: left;
 }
@@ -38,7 +38,7 @@ h1 {
 .doelstellingen,
 .inhoud {
     display: inline-block;
-    width: 49.6%;
+    width: 49%;
     margin-bottom: 4%;
 }
 
@@ -51,8 +51,8 @@ h1 {
 /*******************De Kaartjes*****************/
 .klaarButton {
     position: absolute;
-    left: 57.91%;
-    top: 87.24%;
+    left: 54.91%;
+    top: 12.24%;
 }
 
 .kaartjes {
@@ -170,6 +170,7 @@ li {
     width: 200px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .kaartje-start .portlet-header .ui-icon {
@@ -183,4 +184,34 @@ li {
     overflow: hidden;
     width: 17px;
     height: 17px;
+}
+
+@media only screen and (min-width: 1440px) {
+    
+    .korteheader{
+        width: 250%
+    }
+    header {
+    padding-top: 5%;
+    width: 76%;
+    
+}
+    .klaarButton{
+        position: absolute;
+    left: 59.60%;
+    top: 8%;
+    }
+    .oranjeKaart,
+.blauweKaart,
+.rozeKaart,
+.groeneKaart,
+.paarseKaart,
+.geleKaart {
+    /*    text-align: center;*/
+    margin-bottom: 7%;
+  
+    
+    
+}
+    
 }

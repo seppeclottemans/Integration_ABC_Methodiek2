@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lesplan</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/lesplan.js"></script>
 </head>
 
 <body>
 
-   <!--- navigatie --->
+    <!--- navigatie --->
     <nav class="linker-navigatie">
         <ul>
             <li>
@@ -23,25 +27,47 @@
                     <p>Help</p>
                 </a>
             </li>
-            <img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo">
+            <a href="https://www.erasmushogeschool.be/nl?gclid=Cj0KCQjwrJ7nBRD5ARIsAATMxstTNEnIyPO4GPsGZcw344HmAzbvGn6reeGt7MRNlBAkcRKedly1aBQaAqS6EALw_wcB" target="_blank"><img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo"></a>
         </ul>
     </nav>
 
     <main>
-       <!--- header --->
+        <!--- header --->
         <header>
-            <h1 class="title">Lesplannen</h1>
             <!--- toont de eerste popup --->
             <button class="btn-zwart" id="btnNieuw">+Maak nieuwe fase</button>
-
             <hr>
         </header>
-        
-        <!--- hier komt de ingevulde informatie uit de form/popup --->
-        <div class="lesplan" id="fase1">
 
+        <!--- hier komt de ingevulde informatie uit de form/popup --->
+        <div class="lesplan">
+            <div class="fase">
+                <div id="info0"></div>
+                <div class="fase_kaartjes" id="0">
+
+                </div>
+            </div>
+
+            <div class="fase">
+                <div id="info1"></div>
+                <div class="fase_kaartjes" id="1">
+
+                </div>
+            </div>
+            <div class="fase">
+                <div id="info2"></div>
+                <div class="fase_kaartjes" id="2">
+
+                </div>
+            </div>
+            <div class="fase">
+                <div id="info3"></div>
+                <div class="fase_kaartjes" id="3">
+
+                </div>
+            </div>
         </div>
-        
+
         <!--- popup --->
         <div id="eersteForm" class="form">
             <div class="inhoudForm">
@@ -56,8 +82,7 @@
                     <h3>week(en):</h3>
                     <input id="weekBereik" type="text" placeholder="week x-y">
                     <h3>doelstellingen:</h3>
-                    <textarea id="doelstellingenWeek" type="text">
-                    </textarea>
+                    <textarea id="doelstellingenWeek" type="text"></textarea>
                     <button onclick="window.location.href = 'weekplan.html';" class="btn-zwart" id="btnFinish">finish</button>
                 </div>
             </div>
@@ -65,9 +90,6 @@
 
     </main>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/popup_lesplan.js"></script>
 </body>
 

@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+
 }
 
 #Opleidingsonderdeel,
@@ -57,26 +57,25 @@ h1 {
     font-size: 24pt;
 }
 
-.lesplan1 h2 {
+.lesplan h2 {
     margin-bottom: 5%
 }
 
-.lesplan1 p {
+.lesplan p {
     margin-bottom: 2%;
 
 }
 
 .lesplan1 {
-    width: 84.86%;
+    width: 85.15%;
 }
-
 
 .beschrijving {
     width: 50%;
 }
 
 main {
-    margin-left: 15.13%;
+    margin-left: 15.85%;
 
 }
 
@@ -88,12 +87,24 @@ header {
     justify-content: flex-end;
     align-items: center;
     box-sizing: content-box;
-    width: 84.86%;
-    float: left;
-
+    width: 85.15%;
+   
 
 }
 
+
+/*Specific settings for the header on the home page */
+#header-home {
+    width: 80%;
+    height: 10%;
+}
+
+#header-home hr {
+    margin-bottom: 10%;
+}
+
+
+/* end of header-home */
 .title {
     margin-right: auto;
 }
@@ -108,26 +119,20 @@ hr {
 #ingevulddoelstellingenWeek,
 #ingevuldweekBereik {
     font-family: 'Avenir LT Std 95 Black';
+        
+}
+
+#doelstellingenWeek {
     height: 25vh;
     margin-bottom: 10%;
 }
+*/
 
-#doelstellingenWeek{
-    height: 25vh;
-    margin-bottom: 10%;
-}
-}
 
-/*
-@media only screen and (min-width: 1024px) {
-    hr {
-        width: 150%
-    }
 
-    
     body{
         margin: auto
-        
+
     }
     main{
         padding-left: 10%;

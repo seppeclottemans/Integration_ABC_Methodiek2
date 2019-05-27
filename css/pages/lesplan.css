@@ -1,0 +1,59 @@
+.fase{
+    float:left;
+    display: grid;
+    grid-template-columns: 162.47px 630px;
+    width: 100%;
+}
+.fase_kaartjes{
+    display: flex;
+}
+.fase_info{
+    display: flex;
+    flex-direction: column;
+        width:100px;
+}
+
+.grid{
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 162.47px;
+    grid-template-rows: 60px 60px 60px 60px ;
+    overflow-y: scroll;
+    grid-auto-flow: column;
+}
+.grid div{
+    width:162.47px;
+    padding:10px 0px 0px 0px;
+    text-align: center;
+}
+
+.kennisverwerving {
+    background-color: #F1894D;
+    color: white;
+}
+
+.samenwerking {
+    background-color: #27ACAD;
+    color: white;
+}
+
+.discussie {
+    background-color: #EF8190;
+    color: white;
+}
+
+.onderzoek {
+    background-color: #86A32A;
+    color: white;
+}
+
+.praktijk {
+    background-color: #6561A9;
+    color: white;
+}
+
+.productie {
+    background-color: #F3B30A;
+    color: white;
+}
