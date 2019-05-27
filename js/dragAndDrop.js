@@ -2,6 +2,12 @@ $(function () {
 
     $(function () {
 
+        var weekBereik = localStorage.getItem('weekBereik');
+        weekBereik = JSON.parse(weekBereik);
+        var ingevuldweekBereik = $('<h1>').text(weekBereik);
+        ingevuldweekBereik.attr('class', "title");
+        $('header').prepend(ingevuldweekBereik);
+
         $(".column").sortable({ // .sortable() is jqueryUI dat in dit geval 5 collomen 'sorteerbaar' maakt verbindt
             connectWith: ".column", // which columns???.... columns with class:"columns"
             cancel: ".portlet-toggle",
@@ -22,7 +28,6 @@ $(function () {
 
                     var deHeader = $(this).parent();
                     var deDiv = deHeader.parent();
-                    console.log('ye');
 
                     $(deDiv).remove();
 
@@ -66,7 +71,7 @@ $(function () {
                 var columnId = this.id;
                 var order = $(this).sortable('toArray'); // .sortable() heeft zijn eigen array maker
 
-                if (columnId == "fase-column1") {        // voor de correcte benaming vd arrays ...
+                if (columnId == "fase-column1") { // voor de correcte benaming vd arrays ...
                     faseKaartjes.column1 = order;
                 } else if (columnId == "fase-column2") {
                     faseKaartjes.column2 = order;

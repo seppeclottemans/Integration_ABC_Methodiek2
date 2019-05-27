@@ -1,5 +1,4 @@
 $('document').ready(function () {
-    console.log('Script loaded');
 
     // haalt de ingevulde elementen uit local storage op en zet deze in de html
     var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
