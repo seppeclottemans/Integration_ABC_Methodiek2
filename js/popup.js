@@ -41,7 +41,6 @@ $('document').ready(function () {
 
     //Lesplan bewerken indien er op kaart wordt gedrukt
     var checkLesplan = '#lesplan' + "1" ;
-    console.log(checkLesplan);
     $('' + checkLesplan).on("click", function() {
         window.location.href = "lesplan.html";
     });

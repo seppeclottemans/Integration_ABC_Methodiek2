@@ -32,7 +32,6 @@ $(function () {
 
                 var deHeader = $(this).parent();
                 var deDiv = deHeader.parent();
-                console.log('ye');
 
                 $(deDiv).remove();
 
