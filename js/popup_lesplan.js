@@ -1,25 +1,6 @@
-$(document).ready(function () {
+$('document').ready(function () {
 
-    // haalt de ingevulde elementen uit local storage op en zet deze in de html
-    var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
-    Opleidingsonderdeel = JSON.parse(Opleidingsonderdeel);
-    var ingevuldOpleidingsonderdeel = $('<h1>').text(Opleidingsonderdeel);
-    ingevuldOpleidingsonderdeel.attr('class', "title");
-    $('header').prepend(ingevuldOpleidingsonderdeel);
-
-    var weekBereik = localStorage.getItem('weekBereik');
-    weekBereik = JSON.parse(weekBereik);
-    var ingevuldweekBereik = $('<p>').text(weekBereik);
-    ingevuldweekBereik.attr('id', "ingevuldweekBereik");
-    $('#fase1').append(ingevuldweekBereik);
-
-    var doelstellingenWeek = localStorage.getItem('doelstellingenWeek');
-    doelstellingenWeek = JSON.parse(doelstellingenWeek);
-    var ingevulddoelstellingenWeek = $('<p>').text(doelstellingenWeek);
-    ingevulddoelstellingenWeek.attr('id', "ingevulddoelstellingenWeek");
-    $('#fase1').append(ingevulddoelstellingenWeek);
-
-    // globale variabelen aanmaken
+    // globale variabelen aanmaken 
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
     var btnFinish = document.getElementById("btnFinish");
@@ -32,10 +13,15 @@ $(document).ready(function () {
     // ingevulde elementen van de popup's opslaan in local storage
     $("#btnFinish").on("click", function () {
         eersteForm.style.display = "none";
+        
+        
         var weekBereik = $('#weekBereik').val();
-        localStorage.setItem("weekBereik", JSON.stringify(weekBereik));
+        
+
+        localStorage.setItem("weekBereik" , JSON.stringify(weekBereik));
 
         var doelstellingenWeek = $('#doelstellingenWeek').val();
+
         localStorage.setItem("doelstellingenWeek", JSON.stringify(doelstellingenWeek));
     });
 
