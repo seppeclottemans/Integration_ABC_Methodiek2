@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    console.log('Script Linked');
+    //console.log('Script Linked');
 
 
-    //GLobal array, which the usageData will be stored in
+    //Global array, which the usageData will be stored in
     var cardGebruik = [];
 
     //ajax call to local .json, containing the specific usage of certain modules
@@ -18,7 +18,7 @@ $(document).ready(function () {
         console.log(a);
         console.log(b);
     }).always(function () {
-        console.log('Always');
+        //console.log('Always');
     });
 
     //looping through the data received from the ajax-call
@@ -36,7 +36,7 @@ $(document).ready(function () {
             //Push to global array - see line 6
             cardGebruik.push(cardData.gebruik);
         };
-        console.log(cardGebruik);
+        //console.log(cardGebruik);
         setCards(cardGebruik);
     };
 
@@ -45,12 +45,12 @@ $(document).ready(function () {
     //Function to save the module usage to localStorage
     function setCards(cardData) {
         var gebruikData = cardData;
-        if (localStorage.getItem("gebruik") !== null || localStorage.getItem("gebruik") !== "null") {
-
-            //Clear the localStorage to get fresh results
-            localStorage.clear("gebruik");
-
-        }
+//        if (localStorage.getItem("gebruik") !== null || localStorage.getItem("gebruik") !== "null") {
+//
+//            //Clear the localStorage to get fresh results
+//            localStorage.clear("gebruik");
+//
+//        }
 
         //Stringify the data for use in other scripts
         localStorage.setItem("gebruik", JSON.stringify(gebruikData));

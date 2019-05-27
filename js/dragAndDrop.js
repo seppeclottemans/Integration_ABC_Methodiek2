@@ -3,7 +3,7 @@ $(function () {
     $(function () {
 
         $(".column").sortable({ // .sortable() is jqueryUI dat in dit geval 5 collomen 'sorteerbaar' maakt verbindt
-            connectWith: ".column", // whish columns???.... columns with class:"columns"
+            connectWith: ".column", // which columns???.... columns with class:"columns"
             cancel: ".portlet-toggle",
             placeholder: "kaartjes-placeholder ui-corner-all",
             stop: function (event, ui) { // wanneer een kaartje losgelaten wordt...
@@ -61,8 +61,8 @@ $(function () {
             var faseKaartjes = {}
             var rownumber = 1;
 
-            $(".fase").each(function (faseColumn) { // 
-                
+            $(".fase").each(function (faseColumn) { //
+
                 var columnId = this.id;
                 var order = $(this).sortable('toArray'); // .sortable() heeft zijn eigen array maker
 

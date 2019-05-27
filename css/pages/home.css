@@ -23,6 +23,8 @@
 
 #ingevuldDeeltraject {
     display: inline-block;
+    float: right;
+    padding-top: 0.5em;
     font-family: 'Avenir LT Std 95 Black';
     font-size: 14pt;
 
@@ -30,10 +32,12 @@
 
 #ingevuldDocent {
     display: inline-block;
+    float: right;
 }
 
 #ingevuldSemester {
     display: inline-block;
+    float: right;
 }
 
 #ingevulddoelstellingen {
@@ -68,10 +72,15 @@ h1 {
 
 .lesplan1 {
     width: 85.15%;
+    flex: 3
 }
 
 .beschrijving {
     width: 50%;
+}
+
+.chart-lesplan {
+    flex: 1;
 }
 
 main {
@@ -88,7 +97,7 @@ header {
     align-items: center;
     box-sizing: content-box;
     width: 85.15%;
-   
+
 
 }
 
@@ -119,24 +128,25 @@ hr {
 #ingevulddoelstellingenWeek,
 #ingevuldweekBereik {
     font-family: 'Avenir LT Std 95 Black';
-        
+
 }
 
 #doelstellingenWeek {
-    height: 25vh;
+    height: 150px;
     margin-bottom: 10%;
 }
-*/
 
 
 
-    body{
-        margin: auto
 
-    }
-    main{
-        padding-left: 10%;
-        widows: 100%;
-    }
+*/ body {
+    margin: auto
 }
+
+main {
+    padding-left: 10%;
+    widows: 100%;
+}
+}
+
 */

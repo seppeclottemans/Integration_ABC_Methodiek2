@@ -1,4 +1,4 @@
-$('document').ready(function () {
+$(document).ready(function () {
 
     // haalt de ingevulde elementen uit local storage op en zet deze in de html
     var Opleidingsonderdeel = localStorage.getItem('Opleidingsonderdeel');
@@ -19,7 +19,7 @@ $('document').ready(function () {
     ingevulddoelstellingenWeek.attr('id', "ingevulddoelstellingenWeek");
     $('#fase1').append(ingevulddoelstellingenWeek);
 
-    // globale variabelen aanmaken 
+    // globale variabelen aanmaken
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
     var btnFinish = document.getElementById("btnFinish");
@@ -34,6 +34,7 @@ $('document').ready(function () {
         eersteForm.style.display = "none";
         var weekBereik = $('#weekBereik').val();
         localStorage.setItem("weekBereik", JSON.stringify(weekBereik));
+
         var doelstellingenWeek = $('#doelstellingenWeek').val();
         localStorage.setItem("doelstellingenWeek", JSON.stringify(doelstellingenWeek));
     });

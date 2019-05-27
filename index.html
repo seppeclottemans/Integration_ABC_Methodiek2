@@ -23,7 +23,7 @@
                     <p>Help</p>
                 </a>
             </li>
-            <a href="https://www.erasmushogeschool.be/nl?gclid=Cj0KCQjwrJ7nBRD5ARIsAATMxstTNEnIyPO4GPsGZcw344HmAzbvGn6reeGt7MRNlBAkcRKedly1aBQaAqS6EALw_wcB" target="_blank"><img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo" ></a>
+            <a href="https://www.erasmushogeschool.be/nl?gclid=Cj0KCQjwrJ7nBRD5ARIsAATMxstTNEnIyPO4GPsGZcw344HmAzbvGn6reeGt7MRNlBAkcRKedly1aBQaAqS6EALw_wcB" target="_blank"><img src="./nav-images/EhB-logo-1-kleurig.svg" alt="ehb-logo" class="ehb-logo"></a>
         </ul>
     </nav>
 
@@ -42,23 +42,25 @@
             <!--Hier komen de de dummy kaartjes met grafieken-->
             <div class="cardContainer">
                 <div class="colorBar">
-                    <div class="colorLine1 colorLineChart"></div>
-                    <div class="colorLine2 colorLineChart"></div>
-                    <div class="colorLine3 colorLineChart"></div>
-                    <div class="colorLine4 colorLineChart"></div>
-                    <div class="colorLine5 colorLineChart"></div>
-                    <div class="colorLine6 colorLineChart"></div>
+                    <div class="colorLine1 colorLineChart"><span class="tooltipText"></span></div>
+                    <div class="colorLine2 colorLineChart"><span class="tooltipText"></span></div>
+                    <div class="colorLine3 colorLineChart"><span class="tooltipText"></span></div>
+                    <div class="colorLine4 colorLineChart"><span class="tooltipText"></span></div>
+                    <div class="colorLine5 colorLineChart"><span class="tooltipText"></span></div>
+                    <div class="colorLine6 colorLineChart"><span class="tooltipText"></span></div>
                 </div>
 
                 <div class="info-lesplan">
-                    <div class="text-lesplan"> LOREM IPSIL ?ANO NOJZANAN ONAGZOA%
-                        EAN NANGMJAEG%OJA
-                        AEGAEBNA%EBOABE%EBNBEOAEB
-                        A%BAEJJE lesplan a,,bBA%BE?%AEBNPBN docent AE%EBNEBA EBPNBAEPKAEB?AKBE%KB%PABAEB%AEB?%KAB%AEB? AB?KEA?BAKB?E*AEBbek,amkb,ab
+
+                    <!--- hier komt de ingevulde informatie uit de form/popup  --->
+                    <div class="lesplan1" id="lesplan1">
+
                     </div>
 
+
+
                     <div class="chart-lesplan">
-                        <canvas id="canvas-0" style="display: block; height: 201px; width: 403px;" width="806" height="402" class="chartjs-render-monitor">
+                        <canvas id="canvas-0" class="chartjs-render-monitor">
                         </canvas>
                     </div>
                 </div>
@@ -67,37 +69,11 @@
 
             </div>
 
-            <div class="cardContainer">
-                <div class="colorBar">
-                    <div class="colorLine1 colorLineChart"></div>
-                    <div class="colorLine2 colorLineChart"></div>
-                    <div class="colorLine3 colorLineChart"></div>
-                    <div class="colorLine4 colorLineChart"></div>
-                    <div class="colorLine5 colorLineChart"></div>
-                    <div class="colorLine6 colorLineChart"></div>
-                </div>
 
-                <div class="info-lesplan">
-                    <div class="text-lesplan"> LOREM IPSIL ?ANO NOJZANAN ONAGZOA%
-                        EAN NANGMJAEG%OJA
-                        AEGAEBNA%EBOABE%EBNBEOAEB
-                        A%BAEJJE lesplan a,,bBA%BE?%AEBNPBN docent AE%EBNEBA EBPNBAEPKAEB?AKBE%KB%PABAEB%AEB?%KAB%AEB? AB?KEA?BAKB?E*AEBbek,amkb,ab
-                    </div>
-
-                    <div class="chart-lesplan">
-                        <canvas id="canvas-1" style="display: block; height: 201px; width: 403px;" width="806" height="402" class="chartjs-render-monitor">
-                        </canvas>
-                    </div>
-                </div>
-
-            </div>
 
         </div>
 
-        <!--- hier komt de ingevulde informatie uit de form/popup  --->
-        <div class="lesplan1" id="lesplan1">
 
-        </div>
 
         <!--- eerste popup --->
         <div id="eersteForm" class="form">
@@ -155,7 +131,6 @@
     <script src="js/cardsPopup.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/popup.js"></script>
     <script src="js/Chart.js"></script>
     <script src="js/getUsageCards.js"></script>
     <script src="js/customChart.js"></script>

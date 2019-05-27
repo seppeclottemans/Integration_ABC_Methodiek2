@@ -40,7 +40,15 @@ $('document').ready(function () {
     ingevulddoelstellingen.attr('id', "ingevulddoelstellingen");
     $("#lesplan1").append(ingevulddoelstellingen);
 
-    // globale variabelen aanmaken 
+    //Lesplan bewerken indien er op kaart wordt gedrukt
+    var checkLesplan = '#lesplan' + "1" ;
+    console.log(checkLesplan);
+    $('' + checkLesplan).on("click", function() {
+        window.location.href = "lesplan.html";
+    });
+
+
+    // globale variabelen aanmaken
     var eersteForm = document.getElementById("eersteForm");
     var btnNieuw = document.getElementById("btnNieuw");
     var tweedeForm = document.getElementById("tweedeForm");
@@ -57,11 +65,13 @@ $('document').ready(function () {
     $("#btnVolgende").on("click", function () {
         tweedeForm.style.display = "block";
         eersteForm.style.display = "none";
+
     });
 
     btnVorige.onclick = function () {
         eersteForm.style.display = "block";
         tweedeForm.style.display = "none";
+
     }
 
     // pop up sluiten als er naast de form word geklikt.
@@ -69,35 +79,41 @@ $('document').ready(function () {
         if (event.target == eersteForm) {
             eersteForm.style.display = "none";
         }
+
         if (event.target == tweedeForm) {
             tweedeForm.style.display = "none";
         }
 
-
         if (event.target == popupCard) {
             popupCard.style.display = "none";
         }
-
     }
 
     // ingevulde elementen van de popup's opslaan in local storage
     $("#btnFinish").on("click", function saveToLocalStorage() {
+
         var Opleidingsonderdeel = $('#Opleidingsonderdeel').val();
         localStorage.setItem("Opleidingsonderdeel", JSON.stringify(Opleidingsonderdeel));
+
         var Deeltraject = $('#Deeltraject').val();
         localStorage.setItem("Deeltraject", JSON.stringify(Deeltraject));
+
         var Docent = $('#Docent').val();
         localStorage.setItem("Docent",
             JSON.stringify(Docent));
+
         var Semester = $('#Semester').val();
         localStorage.setItem("Semester",
             JSON.stringify(Semester));
+
         var vakbeschrijving = $('#vakbeschrijving').val();
         localStorage.setItem("vakbeschrijving",
             JSON.stringify(vakbeschrijving));
+
         var doelstellingen = $('#doelstellingen').val();
         localStorage.setItem("doelstellingen",
             JSON.stringify(doelstellingen));
+
         var doelstellingen = $('#doelstellingen').val();
         localStorage.setItem("doelstellingen",
             JSON.stringify(doelstellingen));

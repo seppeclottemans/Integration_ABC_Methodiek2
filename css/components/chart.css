@@ -5,6 +5,14 @@ canvas {
     -ms-user-select: none;
     float: right;
     clear: left;
+
+    display: block;
+    height: 151px;
+    /* was 201 px */
+    width: 301px;
+    /* was 401 px */
+    padding-top: 5%;
+
 }
 
 /****************************************************************/
@@ -56,7 +64,7 @@ canvas {
     top: 0
 }
 
-
+/***************************************************************************/
 
 /***********************************
 *           Color BaR              *
@@ -94,6 +102,7 @@ canvas {
 
 .colorBar {
     display: flex;
+    transition: ease-in;
 }
 
 .colorLineChart {
@@ -103,6 +112,9 @@ canvas {
     margin: 0;
     padding: 0;
     float: left;
+    transition: ease-in;
+    position: relative;
+
 }
 
 .colorLine1 {
@@ -133,4 +145,39 @@ canvas {
 .colorLine6 {
     background-color: #EF8109;
     flex: 6;
+}
+
+
+.colorLineChart .tooltipText {
+    visibility: hidden;
+    width: 100px;
+    height: 20px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 9999;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.colorLineChart .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.colorLineChart:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
 }
