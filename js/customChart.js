@@ -6,29 +6,28 @@ $(document).ready(function () {
     //    var retrievedData = localStorage.getItem("gebruik");
     //    var dataCards = JSON.parse(retrievedData);
 
-    var week = localStorage.getItem("weekBereik");
-    //    console.log(week);
-    var weekData = localStorage.getItem(week);
-    //    console.log(weekData);
+
+    var kaartData = localStorage.getItem("allFases");
+    console.log(kaartData);
 
 
     //Global Variables to put in the chart
-    var Kennisverwerving = countUsage(weekData, 'kennisverwerving');
+    var Kennisverwerving = countUsage(kaartData, 'kennisverwerving');
     //    console.log(Kennisverwerving);
 
-    var Productie = countUsage(weekData, 'productie');
+    var Productie = countUsage(kaartData, 'productie');
     //    console.log(Productie);
 
-    var Praktijk = countUsage(weekData, 'praktijk');
+    var Praktijk = countUsage(kaartData, 'praktijk');
     //    console.log(Praktijk);
 
-    var Samenwerking = countUsage(weekData, 'samenwerking');
+    var Samenwerking = countUsage(kaartData, 'samenwerking');
     //    console.log(Samenwerking);
 
-    var Onderzoek = countUsage(weekData, 'onderzoek');
+    var Onderzoek = countUsage(kaartData, 'onderzoek');
     //    console.log(Onderzoek);
 
-    var Discussie = countUsage(weekData, 'discussie');
+    var Discussie = countUsage(kaartData, 'discussie');
     //    console.log(Discussie);
 
     //global array of the card usage values
@@ -52,17 +51,29 @@ $(document).ready(function () {
 
 
     //Building the bar chart
+    var totalValue = 0;
+
+    for (var i = 0; i < 6; i++) {
+        //Number of color|cards
+        var number = i + 1;
+        //Determining the flex number to alays fill out the the width
+        var flexNumber = dataCards[i];
+        $('.colorLine' + number).css('flex', ' ' + flexNumber);
+        var value = $('.colorLine' + number).css('flex-grow');
+        totalValue += JSON.parse(value);
+        console.log(value);
+    };
+    console.log(totalValue);
+
     for (var i = 0; i < 6; i++) {
 
         //Number of color|cards
         var number = i + 1;
         //Determining the flex number to alays fill out the the width
         var flexNumber = dataCards[i];
-        //        console.log('.colorLine' + number + ' { flex: ' + flexNumber + ' }');
         $('.colorLine' + number).css('flex', ' ' + flexNumber);
-
-        var value = $('.colorLine' + number).css('flex-grow') * 10;
-        $('.colorLine' + number).children().html(number + ": " + value + '%');
+        var value = $('.colorLine' + number).css('flex-grow');
+        $('.colorLine' + number).children().html(Math.round((value / totalValue * 100) * 100) / 100 + ' %');
     };
 
     //Toltip when hovering over  lineChart
@@ -151,12 +162,12 @@ $(document).ready(function () {
                     /* window.chartColors.blue */
                     data: [
                     // Retrieved from local data - see global var
-                    dataCards[0],
-                    dataCards[1],
-                    dataCards[2],
-                    dataCards[3],
-                    dataCards[4],
-                    dataCards[5]
+                    dataCards[0]/6 * 100,
+                    dataCards[1]/6 * 100,
+                    dataCards[2]/6 * 100,
+                    dataCards[3]/6 * 100,
+                    dataCards[4]/6 * 100,
+                    dataCards[5]/6 * 100
 
                     ]
                 }]
